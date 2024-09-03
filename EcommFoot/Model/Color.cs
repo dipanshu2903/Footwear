@@ -18,5 +18,12 @@ namespace EcommFoot.Model
         public string? BrandName { get; set; }
     }
 
+    public class Size
+    {
+        [Key]
+        public int SizeId { get; set; }
+
+        public string SizeNo { get; set; }
+    }
 
 }

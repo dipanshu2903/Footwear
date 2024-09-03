@@ -92,8 +92,8 @@ ADD CategoryID INT FOREIGN KEY REFERENCES Categories(CategoryID), -- Foreign key
 
 	--CREATE TABLE COLOR SIZE BRAND  
 
---master table  color , brand , size , customer , admin , category  ,city ,state
---table vendor , admin , product , subcategory ,
+--master table  color , brand , size , customer , admin , category  ,state
+--table vendor , admin , product , subcategory ,city 
 
 create table state (Id int primary key, StateName nvarchar(255));
 create table city (id int , CityName nvarchar(250) not null , StateID INT FOREIGN KEY REFERENCES State(Id));

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EcommFoot.Data;
+using EcommFoot.Model;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,37 +10,42 @@ namespace EcommFoot.Controllers
     [ApiController]
     public class VendorController : ControllerBase
     {
-        // GET: api/<VendorController>
+        private readonly VendorDbContext dbContext;
+
+        public VendorController(VendorDbContext dbContext)
+        {
+            this.dbContext = dbContext;
+        }
+
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IActionResult GetAllVendor()
         {
-            return new string[] { "value1", "value2" };
-
+            return Ok(dbContext.Vendors.ToList());
         }
 
-        // GET api/<VendorController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<VendorController>
         [HttpPost]
-        public void Post([FromBody] string value)
+
+        public IActionResult AddVendor(Vendor vendor)
         {
+          
+            var v = new Vendor()
+            {
+                      VendorId = vendor.VendorId,
+                      FirstName = vendor.FirstName,
+                      LastName = vendor.LastName,
+                      Contact  = vendor.Contact,
+                      Email = vendor.Email,
+                      Address = vendor.Address,
+                      StateId = vendor.StateId,
+                      CityId = vendor.CityId,
+            };
+            dbContext.Vendors.Add(v);
+            dbContext.SaveChanges();
+            return Ok(v);
         }
 
-        // PUT api/<VendorController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
 
-        // DELETE api/<VendorController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+
+        
     }
 }

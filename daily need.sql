@@ -2,17 +2,44 @@ CREATE TABLE Vendors (
     VendorID INT IDENTITY(1,1) PRIMARY KEY, -- Unique identifier for each vendor
     VendorName NVARCHAR(255) NOT NULL,      -- Name of the vendor
 	 VendorLast NVARCHAR(255) NOT NULL,      -- Name of the vendor
-    ContactName NVARCHAR(255),              -- Name of the contact person
+    Contact NVARCHAR(255),              -- Name of the contact person
     ContactEmail NVARCHAR(255) UNIQUE,      -- Contact email of the vendor
-    --ContactPhone NVARCHAR(50),              -- Contact phone number
     Address NVARCHAR(255),                  -- Address of the vendor
     City NVARCHAR(100),                     -- City
     State NVARCHAR(100),                    -- State or Province
-    --ZipCode NVARCHAR(20),                   -- Zip or postal code
     Country NVARCHAR(100),                  -- Country
     CreatedDate DATETIME DEFAULT GETDATE(), -- Date when the vendor was added
     --UpdatedDate DATETIME DEFAULT GETDATE()  -- Date when the vendor was last updated
 );
+
+
+CREATE TABLE Categories (
+    CategoryID INT IDENTITY(1,1) PRIMARY KEY, -- Unique identifier for each category
+    CategoryName NVARCHAR(255) NOT NULL,      -- Name of the category
+);
+
+create table states(
+    stateId int Identity(1,1) primary key,
+    StateName nvarchar(255) not null
+)
+
+create table cities(
+    cityID int identity(1,1) primary key,
+    cityName nvarchar(259) not null,
+    stateId Int Foreign key REFERENCES states(stateId)
+);
+
+
+
+
+
+
+
+
+
+
+
+
 CREATE TABLE Products(
     ProductID INT IDENTITY(1,1) PRIMARY KEY, -- Unique identifier for each product
     VendorID INT FOREIGN KEY REFERENCES Vendors(VendorID), -- Foreign key to the Vendors table
@@ -60,25 +87,16 @@ CREATE TABLE avaibleStockInAdmin (
 );
 
 
-CREATE TABLE Categories (
-    CategoryID INT IDENTITY(1,1) PRIMARY KEY, -- Unique identifier for each category
-    CategoryName NVARCHAR(255) NOT NULL,      -- Name of the category
-    --Description NVARCHAR(MAX),                -- Description of the category
-    --CreatedDate DATETIME DEFAULT GETDATE(),   -- Date when the category was created
-    --UpdatedDate DATETIME DEFAULT GETDATE()    -- Date when the category was last updated
-);
 
 CREATE TABLE Subcategories (
     SubcategoryID INT IDENTITY(1,1) PRIMARY KEY, -- Unique identifier for each subcategory
-    CategoryID INT FOREIGN KEY REFERENCES Categories(CategoryID), -- Foreign key to the Categories table
     SubcategoryName NVARCHAR(255) NOT NULL,    -- Name of the subcategory
     Description NVARCHAR(MAX),                  -- Description of the subcategory
-	Color nvarchar (100) not null,
-	Size int not null,
-	Brand nvarchar(255) not null,
-	Price decimal(18,2) not null,
-    CreatedDate DATETIME DEFAULT GETDATE(),     -- Date when the subcategory was created
-    UpdatedDate DATETIME DEFAULT GETDATE()      -- Date when the subcategory was last updated
+	Color int Foreign key REFERENCES colors(colorID),
+	Size int Foreign key REFERENCES sizes(sizeID)
+	Brand int Foreign key REFERENCES brands(brandId)
+    CategoryID INT FOREIGN KEY REFERENCES Categories(CategoryID), -- Foreign key to the Categories table
+	Price decimal(18,2) not null
 );
 ALTER TABLE Products
 ADD CategoryID INT FOREIGN KEY REFERENCES Categories(CategoryID), -- Foreign key to the Categories table
@@ -92,8 +110,8 @@ ADD CategoryID INT FOREIGN KEY REFERENCES Categories(CategoryID), -- Foreign key
 
 	--CREATE TABLE COLOR SIZE BRAND  
 
---master table  color , brand , size , customer , admin , category  ,state
---table vendor , admin , product , subcategory ,city 
+--master table  color , brand , size , category  , state  
+--table vendor , customer , admin, product , subcategory ,city 
 
 create table state (Id int primary key, StateName nvarchar(255));
 create table city (id int , CityName nvarchar(250) not null , StateID INT FOREIGN KEY REFERENCES State(Id));

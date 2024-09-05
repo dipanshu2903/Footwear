@@ -10,7 +10,8 @@ import { MainComponent } from './admin/SideNavFld/main/main.component';
 import { VendorTblComponent } from './admin/SideNavFld/main/vendor-tbl/vendor-tbl.component';
 import { TableModule } from 'primeng/table';
 import { AddVenderComponent } from './admin/SideNavFld/main/add-vender/add-vender.component';
-
+import {  HttpClientModule } from '@angular/common/http';
+import { EcomServiceService } from './Service/ecom-service.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,15 +20,17 @@ import { AddVenderComponent } from './admin/SideNavFld/main/add-vender/add-vende
     NavbarComponent,
     MainComponent,
     VendorTblComponent,
-    AddVenderComponent,
+    AddVenderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    TableModule
+    TableModule,
+    HttpClientModule
+
   ],
-  providers: [],
+  providers: [EcomServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,22 @@
+
+.sidebar{
+    height: 100vh;
+}
+li {
+    width: 100%;
+}
+i {
+    margin-right: 5px;
+}
+li p {
+    color: white;
+    font-weight: 500;
+    padding: 1px 20px !important;
+    border-radius: 26px;
+    font-size: 20px;
+    cursor: pointer;
+}
+li p:hover {
+    background: white;
+    color: black;
+}

@@ -9,6 +9,7 @@ import { NavbarComponent } from './admin/SideNavFld/navbar/navbar.component';
 import { MainComponent } from './admin/SideNavFld/main/main.component';
 import { VendorTblComponent } from './admin/SideNavFld/main/vendor-tbl/vendor-tbl.component';
 import { TableModule } from 'primeng/table';
+import { AddVenderComponent } from './admin/SideNavFld/main/add-vender/add-vender.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { TableModule } from 'primeng/table';
     NavbarComponent,
     MainComponent,
     VendorTblComponent,
+    AddVenderComponent,
   ],
   imports: [
     BrowserModule,

@@ -20,3 +20,38 @@ li p:hover {
     background: white;
     color: black;
 }
+ .drop-down{
+    color: black;
+    border-radius: 0px;
+    padding: 0px !important;
+ }
+ .drop-down .collapse {
+    margin-left: 30px;
+ }
+ .drop-down .collapse p{
+    color:  #fff;
+ }
+ .drop-down .collapse p:hover{
+    color: #ff5618;
+    background: transparent !important;
+
+ }
+/* side nav dropdowm  start */
+ .menu-items {
+    margin-bottom: 10px;
+  }
+  .menu-arrow {
+    margin-left: auto;
+    transition: transform 0.3s ease;
+  }
+  .collapse.show + .menu-arrow {
+    transform: rotate(180deg);
+  }
+  .menu-icon {
+    margin-right: 10px;
+  }
+  .sub-menu {
+    padding-left: 20px;
+  }
+
+/* side nav dropdowm  end */

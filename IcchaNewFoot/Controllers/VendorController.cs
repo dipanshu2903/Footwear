@@ -37,8 +37,8 @@ namespace EcommFoot.Controllers
                       Contact  = addvendor.Contact,
                       Email = addvendor.Email,
                       Address = addvendor.Address,
-                StateId = addvendor.StateId,
-                CityId = addvendor.CityId,
+                      StateId = addvendor.StateId,
+                      CityId = addvendor.CityId,
             };
             dbContext.Vendors.Add(v);
             dbContext.SaveChanges();

@@ -12,6 +12,8 @@ import { TableModule } from 'primeng/table';
 import { AddVenderComponent } from './admin/SideNavFld/main/add-vender/add-vender.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { EcomServiceService } from './Service/ecom-service.service';
+import { ToastModule } from 'primeng/toast';
+import { ButtonModule } from 'primeng/button'; 
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { EcomServiceService } from './Service/ecom-service.service';
     FormsModule,
     TableModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastModule,
+    ButtonModule,
 
   ],
   providers: [EcomServiceService],

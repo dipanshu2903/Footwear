@@ -13,19 +13,28 @@ export class EcomServiceService {
 
   url : string = environment.baseUrl;
 
-  addVender(user:Array<string>){
-    return  this.http.post(this.url +'User/CreateUser',{
-     FirstName :user[0],
-     LastName :user[1],
-     Contact : user[2],
-     Email:user[3],
-     State :user[4],
-     City : user[5]
-     
+  addPostVender(vendor: {
+    firstName: string;
+    lastName: string;
+    contact: string;
+    email: string;
+    address: string;
+    state: string;
+    city: string;
+  }) {
+    return this.http.post(`${this.url}Vendor`,{
+      FirstName: vendor.firstName,
+      LastName: vendor.lastName,
+      Contact: vendor.contact,
+      Email: vendor.email,
+      Address: vendor.address,
+      StateId: vendor.state,
+      CityId: vendor.city,
     },{
-     responseType : 'text'
+      responseType: 'text'
     });
-}
+  }
+  
 
   getAllVendors():Observable<EcomInter[]>
   {

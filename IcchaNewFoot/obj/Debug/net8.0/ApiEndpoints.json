@@ -1,0 +1,205 @@
+[
+  {
+    "ContainingType": "EcommFoot.Controllers.BrandController",
+    "Method": "GetAllBrand",
+    "RelativePath": "api/Brand",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcommFoot.Controllers.BrandController",
+    "Method": "AddBrand",
+    "RelativePath": "api/Brand",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "brand",
+        "Type": "EcommFoot.Model.Brand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcommFoot.Controllers.CategoryController",
+    "Method": "GetAllCategory",
+    "RelativePath": "api/Category",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcommFoot.Controllers.CategoryController",
+    "Method": "AddCate",
+    "RelativePath": "api/Category",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addcate",
+        "Type": "EcommFoot.Model.AddDataFld.AddCategory",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcommFoot.Controllers.CityController",
+    "Method": "GetAllCity",
+    "RelativePath": "api/City",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcommFoot.Controllers.CityController",
+    "Method": "AddCity",
+    "RelativePath": "api/City",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addCity",
+        "Type": "EcommFoot.Model.AddDataFld.AddCityDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcommFoot.Controllers.ColorController",
+    "Method": "GetAllColor",
+    "RelativePath": "api/Color",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcommFoot.Controllers.ColorController",
+    "Method": "AddColor",
+    "RelativePath": "api/Color",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "color",
+        "Type": "EcommFoot.Model.Color",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcommFoot.Controllers.SizeController",
+    "Method": "GetAllSize",
+    "RelativePath": "api/Size",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcommFoot.Controllers.SizeController",
+    "Method": "Addsize",
+    "RelativePath": "api/Size",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "size",
+        "Type": "EcommFoot.Model.Size",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcommFoot.Controllers.StateController",
+    "Method": "GetAllState",
+    "RelativePath": "api/State",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcommFoot.Controllers.StateController",
+    "Method": "AddStateVen",
+    "RelativePath": "api/State",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addstate",
+        "Type": "EcommFoot.Model.AddDataFld.AddState",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcommFoot.Controllers.VendorController",
+    "Method": "GetAllVendor",
+    "RelativePath": "api/Vendor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcommFoot.Controllers.VendorController",
+    "Method": "AddVendor",
+    "RelativePath": "api/Vendor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addvendor",
+        "Type": "EcommFoot.Model.AddDataFld.AddVendorDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcommFoot.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EcommFoot.WeatherForecast, EcommFoot, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

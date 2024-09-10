@@ -7,7 +7,8 @@ li {
 }
 i {
     margin-right: 5px;
-}
+    /* color: #ff5618; */   
+  }
 li p {
     color: white;
     font-weight: 500;
@@ -15,8 +16,49 @@ li p {
     border-radius: 26px;
     font-size: 20px;
     cursor: pointer;
+    border-bottom: 2px solid #ff5618;
+     /* box-shadow: 0px 0px 5px #ff4400; */
+     transition : ease-in 0.25s;
+     /* animation-duration: 4s; */
+    
 }
 li p:hover {
     background: white;
     color: black;
-}
+  /* color:#ff5618; */
+  }
+ .drop-down{
+    color: black;
+    border-radius: 0px;
+    padding: 0px !important;
+ }
+ .drop-down .collapse {
+    margin-left: 30px;
+ }
+ .drop-down .collapse p{
+    color:  #fff;
+ }
+ .drop-down .collapse p:hover{
+    color: #ff5618;
+    background: transparent !important;
+
+ }
+/* side nav dropdowm  start */
+ .menu-items {
+    margin-bottom: 10px;
+  }
+  .menu-arrow {
+    margin-left: auto;
+    transition: transform 0.3s ease;
+  }
+  .collapse.show + .menu-arrow {
+    transform: rotate(180deg);
+  }
+  .menu-icon {
+    margin-right: 10px;
+  }
+  .sub-menu {
+    padding-left: 20px;
+  }
+
+/* side nav dropdowm  end */

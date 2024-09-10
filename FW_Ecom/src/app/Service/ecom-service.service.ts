@@ -11,18 +11,41 @@ export class EcomServiceService {
 
   constructor(private http : HttpClient) { }
 
-  url : string = environment.baseUrl
+  url : string = environment.baseUrl;
+
+  addPostVender(vendor: {
+    firstName: string;
+    lastName: string;
+    contact: string;
+    email: string;
+    address: string;
+    state: string;
+    city: string;
+  }) {
+    return this.http.post(`${this.url}Vendor`,{
+      FirstName: vendor.firstName,
+      LastName: vendor.lastName,
+      Contact: vendor.contact,
+      Email: vendor.email,
+      Address: vendor.address,
+      StateId: vendor.state,
+      CityId: vendor.city,
+    },{
+      responseType: 'text'
+    });
+  }
+  
 
   getAllVendors():Observable<EcomInter[]>
   {
-    return this.http.get<EcomInter[]>(`${this.url}api/Vendor`);
+    return this.http.get<EcomInter[]>(`${this.url}Vendor`);
   }
 
   getStates(): Observable<any[]> {
-    return this.http.get<any[]>(`${this.url}api/State`);
+    return this.http.get<any[]>(`${this.url}State`);
   }
 
   getCities(): Observable<any[]> {
-    return this.http.get<any[]>(`${this.url}api/City`);
+    return this.http.get<any[]>(`${this.url}City`);
   }
 }

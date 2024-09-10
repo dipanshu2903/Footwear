@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SidenavComponent } from './admin/SideNavFld/sidenav/sidenav.component';
 import { NavbarComponent } from './admin/SideNavFld/navbar/navbar.component';
 import { MainComponent } from './admin/SideNavFld/main/main.component';
@@ -12,6 +12,9 @@ import { TableModule } from 'primeng/table';
 import { AddVenderComponent } from './admin/SideNavFld/main/add-vender/add-vender.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { EcomServiceService } from './Service/ecom-service.service';
+import { ToastModule } from 'primeng/toast';
+import { ButtonModule } from 'primeng/button'; 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +30,10 @@ import { EcomServiceService } from './Service/ecom-service.service';
     AppRoutingModule,
     FormsModule,
     TableModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    ToastModule,
+    ButtonModule,
 
   ],
   providers: [EcomServiceService],

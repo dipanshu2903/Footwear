@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { EcomInter } from 'src/app/Service/ecom-inter';
-
 import { EcomServiceService } from 'src/app/Service/ecom-service.service';
 
 

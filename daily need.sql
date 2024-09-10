@@ -101,6 +101,7 @@ CREATE TABLE Subcategories (
 ALTER TABLE Products
 ADD CategoryID INT FOREIGN KEY REFERENCES Categories(CategoryID), -- Foreign key to the Categories table
     SubcategoryID INT FOREIGN KEY REFERENCES Subcategories(SubcategoryID); -- Foreign key to the Subcategories table
+
 	select * from Vendors;
 	select * from categories;
 	select * from subcategories;

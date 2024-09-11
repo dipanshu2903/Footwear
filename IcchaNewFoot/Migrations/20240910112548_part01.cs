@@ -4,12 +4,62 @@
 
 namespace EcommFoot.Migrations
 {
-    /// <inheritdoc />
-    public partial class test : Migration
+    public partial class part01 : Migration
     {
-        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Brands",
+                columns: table => new
+                {
+                    BrandId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    BrandName = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Brands", x => x.BrandId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Categories",
+                columns: table => new
+                {
+                    CategoryId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CategoryName = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Categories", x => x.CategoryId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Colors",
+                columns: table => new
+                {
+                    ColorId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ColorName = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Colors", x => x.ColorId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Sizes",
+                columns: table => new
+                {
+                    SizeId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    SizeNo = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Sizes", x => x.SizeId);
+                });
+
             migrationBuilder.CreateTable(
                 name: "States",
                 columns: table => new
@@ -40,7 +90,7 @@ namespace EcommFoot.Migrations
                         column: x => x.StateId,
                         principalTable: "States",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict); // Changed to Restrict
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -65,13 +115,13 @@ namespace EcommFoot.Migrations
                         column: x => x.CityId,
                         principalTable: "Cities",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict); // Changed to Restrict
+                        onDelete: ReferentialAction.NoAction); // Changed to NoAction
                     table.ForeignKey(
                         name: "FK_Vendors_States_StateId",
                         column: x => x.StateId,
                         principalTable: "States",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict); // Changed to Restrict
+                        onDelete: ReferentialAction.NoAction); // Changed to NoAction
                 });
 
             migrationBuilder.CreateIndex(
@@ -90,18 +140,15 @@ namespace EcommFoot.Migrations
                 column: "StateId");
         }
 
-
-        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Vendors");
-
-            migrationBuilder.DropTable(
-                name: "Cities");
-
-            migrationBuilder.DropTable(
-                name: "States");
+            migrationBuilder.DropTable(name: "Brands");
+            migrationBuilder.DropTable(name: "Categories");
+            migrationBuilder.DropTable(name: "Colors");
+            migrationBuilder.DropTable(name: "Sizes");
+            migrationBuilder.DropTable(name: "Vendors");
+            migrationBuilder.DropTable(name: "Cities");
+            migrationBuilder.DropTable(name: "States");
         }
     }
 }

@@ -10,4 +10,6 @@ export interface EcomInter {
     stateName?: string; // Optional field if needed
     cityName?: string; 
   }
-  
+  export interface ProductInter{
+    
+  }

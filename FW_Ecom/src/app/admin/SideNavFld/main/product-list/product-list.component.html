@@ -1,5 +1,5 @@
 <div class="card">
-    <p-table [value]="vendor" [paginator]="true" [rows]="5">
+    <p-table [value]="product" [paginator]="true" [rows]="5">
         <ng-template pTemplate="header">
             <tr>
                 <th>Vendor ID</th>
@@ -26,9 +26,9 @@
                 <td>{{ v.cityName }}</td>
                 <td><button class="btn btn-primary">Edit <i class="bi bi-pencil-square"></i></button></td>
                 <td><button class="btn btn-danger">Delete <i class="bi bi-trash3"></i></button></td>
-
             </tr>
         </ng-template>
     </p-table>
 </div>
+
 

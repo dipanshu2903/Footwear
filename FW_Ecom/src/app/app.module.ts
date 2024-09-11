@@ -13,7 +13,9 @@ import { AddVenderComponent } from './admin/SideNavFld/main/add-vender/add-vende
 import {  HttpClientModule } from '@angular/common/http';
 import { EcomServiceService } from './Service/ecom-service.service';
 import { ToastModule } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button'; 
+import { ButtonModule } from 'primeng/button';
+import { AddProductComponent } from './admin/SideNavFld/main/add-product/add-product.component';
+import { ProductListComponent } from './admin/SideNavFld/main/product-list/product-list.component'; 
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ButtonModule } from 'primeng/button';
     NavbarComponent,
     MainComponent,
     VendorTblComponent,
-    AddVenderComponent
+    AddVenderComponent,
+    AddProductComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,

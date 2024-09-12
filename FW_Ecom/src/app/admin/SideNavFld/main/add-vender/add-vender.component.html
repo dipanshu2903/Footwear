@@ -1,4 +1,4 @@
-<p class="text-center fs-3" [ngClass]="isAccountCreated ? 'text-success pt-1' : 'text-danger pb-1'">{{ displayMsg }}</p> 
+<!-- <p class="text-center fs-3" [ngClass]="isAccountCreated ? 'text-success pt-1' : 'text-danger pb-1'">{{ displayMsg }}</p>  -->
 <div class="container align-items-center justify-content-center d-flex mt-5">
     <form class="border p-5 rounded-4 shadow-lg bg-white" [formGroup]="addVender" (ngSubmit)="vendorRegSubmit()">
       <div class="row g-0">
@@ -68,6 +68,8 @@
         </div>
       </div>
     </form>
+    <p-toast position="top-right"></p-toast>
   </div>
+
 
   

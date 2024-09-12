@@ -12,10 +12,17 @@ import { TableModule } from 'primeng/table';
 import { AddVenderComponent } from './admin/SideNavFld/main/add-vender/add-vender.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { EcomServiceService } from './Service/ecom-service.service';
-import { ToastModule } from 'primeng/toast';
 import { ButtonModule } from 'primeng/button';
 import { AddProductComponent } from './admin/SideNavFld/main/add-product/add-product.component';
-import { ProductListComponent } from './admin/SideNavFld/main/product-list/product-list.component'; 
+import { ProductListComponent } from './admin/SideNavFld/main/product-list/product-list.component';
+import { AdminLoginComponent } from './admin/SideNavFld/main/FormAuth/admin-login/admin-login.component';
+import { AdminRegisterComponent } from './admin/SideNavFld/main/FormAuth/admin-register/admin-register.component'; 
+import { DialogModule } from 'primeng/dialog';
+import { InputTextModule } from 'primeng/inputtext';
+import { AvatarModule } from 'primeng/avatar';
+import { MessageService } from 'primeng/api';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';     
+import { ToastModule } from 'primeng/toast'; 
 
 @NgModule({
   declarations: [
@@ -27,7 +34,9 @@ import { ProductListComponent } from './admin/SideNavFld/main/product-list/produ
     VendorTblComponent,
     AddVenderComponent,
     AddProductComponent,
-    ProductListComponent
+    ProductListComponent,
+    AdminLoginComponent,
+    AdminRegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -38,9 +47,13 @@ import { ProductListComponent } from './admin/SideNavFld/main/product-list/produ
     ReactiveFormsModule,
     ToastModule,
     ButtonModule,
+    DialogModule,
+    InputTextModule,
+    AvatarModule,
+    NoopAnimationsModule
 
   ],
-  providers: [EcomServiceService],
+  providers: [EcomServiceService , MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

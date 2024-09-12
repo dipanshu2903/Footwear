@@ -5,6 +5,8 @@ import { VendorTblComponent } from 'src/app/admin/SideNavFld/main/vendor-tbl/ven
 import { AddVenderComponent } from '../main/add-vender/add-vender.component';
 import { AddProductComponent } from '../main/add-product/add-product.component';
 import { ProductListComponent } from '../main/product-list/product-list.component';
+import { AdminLoginComponent } from '../main/FormAuth/admin-login/admin-login.component';
+import { AdminRegisterComponent } from '../main/FormAuth/admin-register/admin-register.component';
 
 const routes: Routes = [
  
@@ -12,7 +14,8 @@ const routes: Routes = [
     { path : 'vendor', component : VendorTblComponent},
     {path :'addvender',component:AddVenderComponent},
     {path: 'aadproduct',component :AddProductComponent},
-    {path:'products',component:ProductListComponent}
+    {path:'products',component:ProductListComponent},
+
 
 ];
 

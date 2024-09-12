@@ -1,6 +1,7 @@
 <div class="card">
-    <p-table [value]="vendor" [paginator]="true" [rows]="5">
-        <ng-template pTemplate="header">
+    <p-table [value]="vendor" [paginator]="true" [rows]="20"  [scrollable]="true" 
+    scrollHeight="500px">
+        <ng-template pTemplate="header" >
             <tr>
                 <th>Vendor ID</th>
                 <th>First Name</th>

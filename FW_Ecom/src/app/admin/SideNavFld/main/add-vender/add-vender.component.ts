@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { Form, FormControl, FormGroup, Validators } from '@angular/forms';
+import { MessageService } from 'primeng/api';
 import{EcomServiceService} from 'src/app/Service/ecom-service.service';
 
 @Component({
@@ -15,7 +16,7 @@ export class AddVenderComponent implements OnInit{
   cities: { id: number, cityName: string, stateId: number }[] = [];
   filteredCities: { id: number, cityName: string }[] = [];
 
-  constructor(private conService: EcomServiceService) { }
+  constructor(private conService: EcomServiceService , private messageService: MessageService) { }
 
   ngOnInit(): void {
     this.loadStates();
@@ -45,6 +46,7 @@ export class AddVenderComponent implements OnInit{
       console.log(res);
       if (res === 'Success') {
         this.displayMsg = 'Registered Vendor Successfully';
+        this.messageService.add({ severity: 'success', summary: 'Success', detail: this.displayMsg  });
         this.isAccountCreated = true;
       } 
       // else if (res === 'AlreadyExists') {
@@ -53,6 +55,7 @@ export class AddVenderComponent implements OnInit{
       // } 
       else {
         this.displayMsg = 'Something went wrong';
+        this.messageService.add({ severity: 'success', summary: 'Danger', detail: this.displayMsg  });
         this.isAccountCreated = false;
       }
     });

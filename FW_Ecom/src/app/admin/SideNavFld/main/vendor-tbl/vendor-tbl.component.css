@@ -1,0 +1,8 @@
+:host  tr > th  {
+    padding: 15px 5px ;
+    min-width: 120px;
+    text-align: center;
+}
+:host  tr > td  {
+    text-align: center;
+}

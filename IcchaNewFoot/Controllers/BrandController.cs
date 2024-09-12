@@ -26,12 +26,12 @@ namespace EcommFoot.Controllers
 
         [HttpPost]
 
-        public IActionResult AddBrand(Brand brand)
+        public IActionResult AddBrand(AddBrand addbrand)
         {
             var b = new Brand()
             {
-                BrandId = brand.BrandId,
-                BrandName = brand.BrandName,
+                BrandId = addbrand.BrandId,
+                BrandName = addbrand.BrandName,
             };
             dbContext.Brands.Add(b);
             dbContext.SaveChanges();

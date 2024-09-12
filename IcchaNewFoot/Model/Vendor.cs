@@ -28,5 +28,7 @@ namespace EcommFoot.Model
         [ForeignKey("CityId")]
         public  int CityId { get; set; }
         public City City { get; set; }
+        public ICollection<Product>Products { get; set; }
+        
     }
 }

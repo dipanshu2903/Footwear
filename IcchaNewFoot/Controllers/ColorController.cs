@@ -26,12 +26,12 @@ namespace EcommFoot.Controllers
 
         [HttpPost]
 
-        public IActionResult AddColor(Color color)
+        public IActionResult AddColor(AddColor addcolor)
         {
             var c = new Color()
             {
-                ColorId = color.ColorId,
-                ColorName = color.ColorName,
+                ColorId = addcolor.ColorId,
+                ColorName = addcolor.ColorName,
 
             };
             dbContext.Colors.Add(c);

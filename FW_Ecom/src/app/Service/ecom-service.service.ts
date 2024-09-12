@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment.development';
-import { EcomInter } from './ecom-inter';
+import { EcomInter, ProductInter } from './ecom-inter';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -36,11 +36,13 @@ export class EcomServiceService {
   }
   
 
-  getAllVendors():Observable<EcomInter[]>
-  {
+  getAllVendors():Observable<EcomInter[]>{
     return this.http.get<EcomInter[]>(`${this.url}Vendor`);
   }
 
+  getAllProducts():Observable<ProductInter[]>{
+    return this.http.get<ProductInter[]>(`${this.url}Product`);
+  }
   getStates(): Observable<any[]> {
     return this.http.get<any[]>(`${this.url}State`);
   }
@@ -48,4 +50,24 @@ export class EcomServiceService {
   getCities(): Observable<any[]> {
     return this.http.get<any[]>(`${this.url}City`);
   }
+
+deleteVendor(vendorId : number): Observable<any>{
+    return this.http.delete(`${this.url}Vendor/${vendorId}`)
+}
+
+deleteProduct(product_Id : number): Observable<any>{
+  return this.http.delete(`${this.url}Product/${product_Id}`)
+}
+
+  // getColors(): Observable<any[]> {
+  //   return this.http.get<any[]>(`${this.url}Color`);
+  // }
+
+  // getAllSubCate():Observable<any[]>{
+  //   return this.http.get<any[]>(`${this.url}SubCate`);
+  // }
+
+  // getAllSize():Observable<any[]>{
+  //   return this.http.get<any[]>(`${this.url}Size`);
+  // }
 }

@@ -24,7 +24,6 @@ namespace EcommFoot.Controllers
             return Ok(dbContext.categories.ToList());
         }
 
-        //// POST api/<CategoryVendor>
         [HttpPost]
 
         public IActionResult AddCate(AddCategory addcate)
@@ -32,46 +31,13 @@ namespace EcommFoot.Controllers
             var category = new Category()
             {
                 CategoryId = addcate.CategoryId,
-                CateName = addcate.CateName,
-               
+                CategoryName = addcate.CategoryName,
+
             };
             dbContext.categories.Add(category);
             dbContext.SaveChanges();
             return Ok(category);
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //// PUT api/<CategoryVendor>/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody] string value)
-        //{
-        //}
-
-        //// DELETE api/<CategoryVendor>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
     }
 }

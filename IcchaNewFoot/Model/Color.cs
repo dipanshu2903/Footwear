@@ -8,6 +8,8 @@ namespace EcommFoot.Model
         public int ColorId { get; set; }
         [StringLength(255)]
         public string ? ColorName { get; set; }
+
+        public ICollection<Product>Products { get; set; }
     }
     public class Brand
     {
@@ -16,6 +18,8 @@ namespace EcommFoot.Model
 
         [StringLength(255)]
         public string? BrandName { get; set; }
+
+        public ICollection<SubCategory> SubCategories { get; set; }
     }
 
     public class Size
@@ -24,6 +28,7 @@ namespace EcommFoot.Model
         public int SizeId { get; set; }
 
         public string SizeNo { get; set; }
+        public ICollection<Product> Products { get; set; }
     }
 
 }

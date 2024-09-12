@@ -48,10 +48,6 @@ import { EcomServiceService } from 'src/app/Service/ecom-service.service';
           this.displayMsg = 'Registered Vendor Successfully';
           this.isAccountCreated = true;
         } 
-        // else if (res === 'AlreadyExists') {
-        //   this.displayMsg = 'Vendor Already Exists. Try another Email.';
-        //   this.isAccountCreated = false;
-        // } 
         else {
           this.displayMsg = 'Something went wrong';
           this.isAccountCreated = false;

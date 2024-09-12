@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Migrations",
-    "\\Model"
+    "\\Controllers",
+    "\\Model",
+    "\\Model\\AddDataFld",
+    "\\Model\\dto"
   ],
-  "SelectedNode": "\\Migrations\\20240910112548_part01.cs",
+  "SelectedNode": "\\Controllers\\ProductController.cs",
   "PreviewInSolutionExplorer": false
 }

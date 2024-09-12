@@ -11,5 +11,14 @@ export interface EcomInter {
     cityName?: string; 
   }
   export interface ProductInter{
-    
+    product_Id :number ;
+    vendorId : number;
+    colorId:number;
+    sizeId:number;
+    productName : string;
+    imageUrl:string;
+    description : string;
+    unitPrice : number;
+    gender:string;
+    subCategoryId : number;
   }

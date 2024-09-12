@@ -2,30 +2,34 @@
     <p-table [value]="product" [paginator]="true" [rows]="5">
         <ng-template pTemplate="header">
             <tr>
-                <th>Vendor ID</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Contact</th>
-                <th>Email</th>
-                <th>Address</th>
-                <th>State Name</th>
-                <th>City Name</th>
-                <th>Update</th>
+               <th>Product Id</th>
+                <th>Vendor Name</th>
+                <th>Color Name</th>
+                <th>Size</th>
+                <th>Product Name</th>
+                <th>ImageUrl</th>
+                <th>Description</th>
+                <th>UnitPrice</th>
+                <th>Gender</th>
+                <th>SubCategory Name</th>
+                <th>Edit</th>
                 <th>Delete</th>
             </tr>
         </ng-template>
-        <ng-template pTemplate="body" let-v>
+        <ng-template pTemplate="body" let-p>
             <tr>
-                <td>{{ v.vendorId }}</td>
-                <td>{{ v.firstName }}</td>
-                <td>{{ v.lastName}}</td>
-                <td>{{ v.contact }}</td>
-                <td>{{v.email}}</td>
-                <td>{{ v.address }}</td>
-                <td>{{ v.stateName}}</td>
-                <td>{{ v.cityName }}</td>
+                <td>{{ p.product_Id }}</td>
+                <td>{{ p.vendorName }}</td>
+                <td>{{ p.colorName }}</td>
+                <td>{{ p.sizeNo}}</td>
+                <td>{{ p.productName }}</td>
+                <td>{{p.imageUrl}}</td>
+                <td>{{ p.description }}</td>
+                <td>{{ p.unitPrice}}</td>
+                <td>{{ p.gender }}</td>
+                <td>{{ p.subCategoryName }}</td>
                 <td><button class="btn btn-primary">Edit <i class="bi bi-pencil-square"></i></button></td>
-                <td><button class="btn btn-danger">Delete <i class="bi bi-trash3"></i></button></td>
+                <td><button class="btn btn-danger" (click)="dltProduct(p.product_Id)">Delete <i class="bi bi-trash3"></i></button></td>
             </tr>
         </ng-template>
     </p-table>

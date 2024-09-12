@@ -125,16 +125,19 @@ namespace EcommFoot.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+
                 name: "IX_Cities_StateId",
                 table: "Cities",
                 column: "StateId");
 
             migrationBuilder.CreateIndex(
+
                 name: "IX_Vendors_CityId",
                 table: "Vendors",
                 column: "CityId");
 
             migrationBuilder.CreateIndex(
+
                 name: "IX_Vendors_StateId",
                 table: "Vendors",
                 column: "StateId");

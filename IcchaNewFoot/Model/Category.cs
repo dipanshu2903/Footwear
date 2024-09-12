@@ -8,6 +8,7 @@ namespace EcommFoot.Model
         public int CategoryId{ get; set; }
 
         [StringLength(255)]
-        public string CateName { get; set; }
+        public string CategoryName { get; set; }
+        public ICollection<SubCategory> SubCategories { get; set; }
     }
 }

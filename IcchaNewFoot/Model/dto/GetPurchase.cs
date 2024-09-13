@@ -1,11 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-
 namespace EcommFoot.Model.dto
 {
-    public class GetPurch
+    public class GetPurchase
     {
         public int Purchase_Id { get; set; }
-        public int ProductName { get; set; }
+        public string ProductName { get; set; }
         public decimal Quantity { get; set; }
         public decimal UnitPrice { get; set; }
         public decimal TotalPrice { get; set; }

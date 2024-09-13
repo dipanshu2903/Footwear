@@ -27,7 +27,7 @@ namespace EcommFoot.Model
         [Key]
         public int SizeId { get; set; }
 
-        public string SizeNo { get; set; }
+        public string  SizeNo { get; set; }
         public ICollection<Product> Products { get; set; }
     }
 

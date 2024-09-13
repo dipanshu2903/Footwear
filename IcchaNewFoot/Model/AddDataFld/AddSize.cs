@@ -4,7 +4,7 @@
     {
         public int SizeId { get; set; }
 
-        public int SizeNo { get; set; }
+        public string SizeNo { get; set; }
     }
 }
 

@@ -27,7 +27,7 @@ export class ProductListComponent implements OnInit {
     this.conService.deleteProduct(product_Id).subscribe({
       next: (response) => {
         console.log('Vendor deleted successfully:', response);
-        
+        this.ngOnInit();
       },
       error: (error) => console.error('Error deleting vendor:', error)
     });

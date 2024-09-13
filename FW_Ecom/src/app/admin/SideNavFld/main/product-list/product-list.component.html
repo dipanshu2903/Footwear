@@ -23,7 +23,7 @@
                 <td>{{ p.colorName }}</td>
                 <td>{{ p.sizeNo}}</td>
                 <td>{{ p.productName }}</td>
-                <td>{{p.imageUrl}}</td>
+                <td><img [src]="p.imageUrl" alt="{{p.productName}}" style="width: 100px; height: auto;" /></td> <!-- Display image -->
                 <td>{{ p.description }}</td>
                 <td>{{ p.unitPrice}}</td>
                 <td>{{ p.gender }}</td>

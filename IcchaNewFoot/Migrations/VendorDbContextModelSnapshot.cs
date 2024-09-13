@@ -164,9 +164,6 @@ namespace EcommFoot.Migrations
                     b.Property<int>("Product_Id")
                         .HasColumnType("int");
 
-                    b.Property<int>("Product_Id1")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("PurchaseDate")
                         .HasColumnType("datetime2");
 
@@ -188,7 +185,7 @@ namespace EcommFoot.Migrations
 
                     b.HasKey("Purchase_Id");
 
-                    b.HasIndex("Product_Id1");
+                    b.HasIndex("Product_Id");
 
                     b.ToTable("Purchases");
                 });
@@ -352,7 +349,7 @@ namespace EcommFoot.Migrations
                 {
                     b.HasOne("EcommFoot.Model.Product", "Product")
                         .WithMany("Purchases")
-                        .HasForeignKey("Product_Id1")
+                        .HasForeignKey("Product_Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

@@ -1,5 +1,6 @@
 ﻿using EcommFoot.Data;
 using EcommFoot.Model;
+using EcommFoot.Model.AddDataFld;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -25,12 +26,12 @@ namespace EcommFoot.Controllers
 
         [HttpPost]
 
-        public IActionResult Addsize(Size size)
+        public IActionResult Addsize(AddSize addsize)
         {
             var s = new Size()
             {
-                SizeId = size.SizeId,
-                SizeNo = size.SizeNo,
+                SizeId = addsize.SizeId,
+                SizeNo = addsize.SizeNo,
             };
             dbContext.Sizes.Add(s);
             dbContext.SaveChanges();

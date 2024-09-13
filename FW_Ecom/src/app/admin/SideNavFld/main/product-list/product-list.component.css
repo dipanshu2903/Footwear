@@ -1,0 +1,12 @@
+:host  tr > th  {
+    padding: 15px 5px ;
+    min-width: 125px;
+    text-align: center;
+}
+:host  tr > td  {
+    text-align: center;
+}
+
+/* .bg th{
+    background-color: #7A9D96;
+} */

@@ -20,6 +20,7 @@ namespace EcommFoot.Data
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Purchase>Purchases { get; set; }
+     
 
     }
 }

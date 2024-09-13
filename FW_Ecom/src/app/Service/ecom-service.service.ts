@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment.development';
-import { EcomInter, ProductInter } from './ecom-inter';
+import { EcomInter, ProductInter, purchaseInter } from './ecom-inter';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -50,6 +50,10 @@ export class EcomServiceService {
   getCities(): Observable<any[]> {
     return this.http.get<any[]>(`${this.url}City`);
   }
+ 
+  getAllPurchase(): Observable<purchaseInter[]>{
+    return this.http.get<purchaseInter[]>(`${this.url}Purchase`)
+  }
 
 deleteVendor(vendorId : number): Observable<any>{
     return this.http.delete(`${this.url}Vendor/${vendorId}`)
@@ -58,6 +62,10 @@ deleteVendor(vendorId : number): Observable<any>{
 deleteProduct(product_Id : number): Observable<any>{
   return this.http.delete(`${this.url}Product/${product_Id}`)
 }
+
+dltPurchase(purchase_Id: number): Observable<any>{
+  return this.http.delete(`${this.url}Purchase/${purchase_Id}`)
+} 
 
   // getColors(): Observable<any[]> {
   //   return this.http.get<any[]>(`${this.url}Color`);

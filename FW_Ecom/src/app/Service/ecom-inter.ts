@@ -22,3 +22,16 @@ export interface EcomInter {
     gender:string;
     subCategoryId : number;
   }
+  export interface purchaseInter{
+    purchaseId:number;
+    productName:string;
+    quantity:number;
+    unitPrice:number;
+    totalPrice:number;
+    sellPrice:number;
+    purchaseDate:number;
+    paymentMethod:string;
+    status:string
+    
+  }
+  

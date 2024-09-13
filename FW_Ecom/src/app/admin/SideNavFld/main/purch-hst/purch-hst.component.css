@@ -1,0 +1,21 @@
+:host  tr > th  {
+    padding: 15px 5px ;
+    min-width: 125px;
+    text-align: center;
+    font-size: 15px;
+}
+:host  tr > td  {
+    text-align: center;font-weight:;
+}
+.bg-warning {
+    background-color: #ffecb3 !important; /* Light yellow for pending */
+    
+}
+.bg-danger {
+    background-color: #f8d7da !important; /* Light red for rejected */
+}
+
+.bg-success {
+    background-color: #aff4bf !important; /* Light green for successful */
+    color: #12eb45;
+}

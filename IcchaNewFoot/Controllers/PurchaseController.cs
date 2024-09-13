@@ -1,43 +1,65 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using EcommFoot.Data;
+using EcommFoot.Model;
+using EcommFoot.Model.AddDataFld;
+using EcommFoot.Model.dto;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+namespace EcommFoot.Controllers;
 
-namespace EcommFoot.Controllers
+[Route("api/[controller]")]
+[ApiController]
+public class PurchaseController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class PurchaseController : ControllerBase
+    private readonly VendorDbContext dbContext;
+
+    public PurchaseController(VendorDbContext dbContext)
     {
-        // GET: api/<PurchaseController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        this.dbContext = dbContext;
+    }
 
-        // GET api/<PurchaseController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<GetPurchase>>> GetAllPurchase()
+    {
+        List<GetPurchase> p = (await dbContext.Purchases
+            .Include((Purchase x) => x.Product)
+            .ToListAsync()).Select((Purchase x) => new GetPurchase
         {
-            return "value";
-        }
+            ProductName = x.Product.ProductName,
+            Purchase_Id = x.Purchase_Id,
+            Quantity = x.Quantity,
+            UnitPrice = x.UnitPrice,
+            TotalPrice = x.TotalPrice,
+            SellPrice = x.SellPrice,
+            PurchaseDate = x.PurchaseDate,
+            PaymentMethod = x.PaymentMethod,
+            Status = x.Status
+        }).ToList();
+        return Ok(p);
+    }
 
-        // POST api/<PurchaseController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+    [HttpPost]
+    public IActionResult AddPurchase(AddPurchase addPurchase)
+    {
+        var TotalAmount = addPurchase.UnitPrice * addPurchase.Quantity;
+        Purchase pur = new Purchase
         {
-        }
-
-        // PUT api/<PurchaseController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<PurchaseController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+            Product_Id = addPurchase.Product_Id,
+            Purchase_Id = addPurchase.Purchase_Id,
+            Quantity = addPurchase.Quantity,
+            UnitPrice = addPurchase.UnitPrice,
+            TotalPrice =TotalAmount,
+            SellPrice = addPurchase.SellPrice,
+            PurchaseDate = addPurchase.PurchaseDate,
+            PaymentMethod = addPurchase.PaymentMethod,
+            Status = addPurchase.Status
+        };
+        dbContext.Purchases.Add(pur);
+        dbContext.SaveChanges();
+        return Ok(pur);
     }
 }
+

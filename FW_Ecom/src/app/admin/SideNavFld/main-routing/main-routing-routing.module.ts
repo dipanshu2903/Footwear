@@ -16,10 +16,15 @@ const routes: Routes = [
     { path : 'vendor', component : VendorTblComponent},
     {path :'addvender',component:AddVenderComponent},
     {path:'products',component:ProductListComponent},
+<<<<<<< HEAD
     {path: 'aadproduct',component :AddProductComponent},
     {path :'purchOrd' , component : PurchOrdComponent},
     {path : 'purchHst' ,component : PurchHstComponent}
 
+=======
+    {path:'purchOrd',component:PurchOrdComponent},
+    {path:'purchHst',component:PurchHstComponent}
+>>>>>>> 4d77fda25a128bc0fafc5892c7c79d4cf76b63fa
 
 
 ];

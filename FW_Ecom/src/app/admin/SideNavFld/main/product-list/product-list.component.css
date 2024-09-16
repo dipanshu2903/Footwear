@@ -5,4 +5,12 @@
 }
 :host  tr > td  {
     text-align: center;
+<<<<<<< HEAD
 }
+=======
+}
+
+/* .bg th{
+    background-color: #7A9D96;
+} */
+>>>>>>> 4d77fda25a128bc0fafc5892c7c79d4cf76b63fa

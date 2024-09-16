@@ -32,6 +32,8 @@ namespace EcommFoot.Model
         public string Description { get; set; } 
         public decimal UnitPrice { get; set; } 
         public string Gender { get; set; } 
-        public ICollection<Purchase> Purchases { get; set; }
+        public ICollection<Purchase>Purchases { get; set; } 
+
+  
     }
 }

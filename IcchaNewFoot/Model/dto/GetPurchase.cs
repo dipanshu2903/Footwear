@@ -1,8 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-
 namespace EcommFoot.Model.dto
 {
-    public class GetPurch
+    public class GetPurchase
     {
         public int Purchase_Id { get; set; }
         public string ProductName { get; set; }

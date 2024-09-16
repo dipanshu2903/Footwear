@@ -5,7 +5,6 @@ namespace EcommFoot.Model
 {
     public class Purchase
     {
-
         [Key]
         public int Purchase_Id { get; set; }
 

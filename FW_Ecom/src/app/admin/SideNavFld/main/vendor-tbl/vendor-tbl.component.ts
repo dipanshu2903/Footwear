@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from 'primeng/api';
 import { EcomInter } from 'src/app/Service/ecom-inter';
 import { EcomServiceService } from 'src/app/Service/ecom-service.service';
 
@@ -10,7 +11,8 @@ import { EcomServiceService } from 'src/app/Service/ecom-service.service';
 })
 export class VendorTblComponent implements OnInit {
   vendor: EcomInter[] = [];
-  constructor(private  conService: EcomServiceService){}
+  displayMsg: string = '';
+  constructor(private  conService: EcomServiceService,private messageService: MessageService){}
 
   ngOnInit():void {
     this.conService.getAllVendors().subscribe({
@@ -26,10 +28,17 @@ export class VendorTblComponent implements OnInit {
     dltVendor(vendorId: number) {
       this.conService.deleteVendor(vendorId).subscribe({
         next: (response) => {
+          this.displayMsg = 'Delete Vendor Successfully';
+          this.messageService.add({ severity: 'success', summary: 'Success', detail: this.displayMsg  });
           console.log('Vendor deleted successfully:', response);
-          
+          this.ngOnInit();
         },
-        error: (error) => console.error('Error deleting vendor:', error)
+        error: (error) => {
+          this.displayMsg = 'UnSuccessfull';
+          this.messageService.add({ severity: 'error', summary: '', detail: this.displayMsg  });
+          console.error('Error deleting vendor:', error)
+          this.ngOnInit();
+        }
       });
     }
 

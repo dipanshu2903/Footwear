@@ -22,6 +22,7 @@ public class PurchaseController : ControllerBase
     }
 
     [HttpGet]
+<<<<<<< HEAD
     public async Task<ActionResult<IEnumerable<GetPurch>>> GetAllPurchase()
     {
         List<GetPurch> p = (await dbContext.Purchases
@@ -38,6 +39,24 @@ public class PurchaseController : ControllerBase
                 PaymentMethod = x.PaymentMethod,
                 Status = x.Status
             }).ToList();
+=======
+    public async Task<ActionResult<IEnumerable<GetPurchase>>> GetAllPurchase()
+    {
+        List<GetPurchase> p = (await dbContext.Purchases
+            .Include((Purchase x) => x.Product)
+            .ToListAsync()).Select((Purchase x) => new GetPurchase
+        {
+            ProductName = x.Product.ProductName,
+            Purchase_Id = x.Purchase_Id,
+            Quantity = x.Quantity,
+            UnitPrice = x.UnitPrice,
+            TotalPrice = x.TotalPrice,
+            SellPrice = x.SellPrice,
+            PurchaseDate = x.PurchaseDate,
+            PaymentMethod = x.PaymentMethod,
+            Status = x.Status
+        }).ToList();
+>>>>>>> 4d77fda25a128bc0fafc5892c7c79d4cf76b63fa
         return Ok(p);
     }
 
@@ -51,7 +70,11 @@ public class PurchaseController : ControllerBase
             Purchase_Id = addPurchase.Purchase_Id,
             Quantity = addPurchase.Quantity,
             UnitPrice = addPurchase.UnitPrice,
+<<<<<<< HEAD
             TotalPrice = TotalAmount,
+=======
+            TotalPrice =TotalAmount,
+>>>>>>> 4d77fda25a128bc0fafc5892c7c79d4cf76b63fa
             SellPrice = addPurchase.SellPrice,
             PurchaseDate = addPurchase.PurchaseDate,
             PaymentMethod = addPurchase.PaymentMethod,
@@ -62,3 +85,4 @@ public class PurchaseController : ControllerBase
         return Ok(pur);
     }
 }
+

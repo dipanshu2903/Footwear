@@ -12,8 +12,13 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EcommFoot.Migrations
 {
     [DbContext(typeof(VendorDbContext))]
+<<<<<<<< HEAD:IcchaNewFoot/Migrations/20240912125218_Part01.Designer.cs
+    [Migration("20240912125218_Part01")]
+    partial class Part01
+========
     [Migration("20240913044026_part04")]
     partial class part04
+>>>>>>>> 4d77fda25a128bc0fafc5892c7c79d4cf76b63fa:IcchaNewFoot/Migrations/20240913044026_part04.Designer.cs
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

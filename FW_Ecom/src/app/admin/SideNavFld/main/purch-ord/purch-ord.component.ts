@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./purch-ord.component.css']
 })
 export class PurchOrdComponent {
+purch: any ="";
+
+
 
 }

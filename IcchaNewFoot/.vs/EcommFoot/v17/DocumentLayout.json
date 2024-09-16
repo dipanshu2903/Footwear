@@ -1,26 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\SK\\Documents\\Footwear\\IcchaNewFoot\\",
+  "WorkspaceRootPath": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\model\\adddatafld\\addpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:model\\adddatafld\\addpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\model\\adddatafld\\addsubcate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:model\\adddatafld\\addsubcate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\model\\adddatafld\\addvendordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:model\\adddatafld\\addvendordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\model\\adddatafld\\addsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:model\\adddatafld\\addsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\model\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:model\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\controllers\\sizecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:controllers\\sizecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\controllers\\purchasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:controllers\\purchasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\model\\dto\\getpurch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:model\\dto\\getpurch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\model\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:model\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\SK\\Documents\\Footwear\\IcchaNewFoot\\Migrations\\20240912114033_part04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240912114033_part04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\migrations\\vendordbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:migrations\\vendordbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,76 +38,106 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddVendorDto.cs",
-              "DocumentMoniker": "C:\\Users\\SK\\Documents\\Footwear\\IcchaNewFoot\\Model\\AddDataFld\\AddVendorDto.cs",
-              "RelativeDocumentMoniker": "Model\\AddDataFld\\AddVendorDto.cs",
-              "ToolTip": "C:\\Users\\SK\\Documents\\Footwear\\IcchaNewFoot\\Model\\AddDataFld\\AddVendorDto.cs",
-              "RelativeToolTip": "Model\\AddDataFld\\AddVendorDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "AddSubCate.cs",
+              "DocumentMoniker": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Model\\AddDataFld\\AddSubCate.cs",
+              "RelativeDocumentMoniker": "Model\\AddDataFld\\AddSubCate.cs",
+              "ToolTip": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Model\\AddDataFld\\AddSubCate.cs",
+              "RelativeToolTip": "Model\\AddDataFld\\AddSubCate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T11:48:18.191Z",
+              "WhenOpened": "2024-09-13T11:08:58.458Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddPurchase.cs",
-              "DocumentMoniker": "C:\\Users\\SK\\Documents\\Footwear\\IcchaNewFoot\\Model\\AddDataFld\\AddPurchase.cs",
-              "RelativeDocumentMoniker": "Model\\AddDataFld\\AddPurchase.cs",
-              "ToolTip": "C:\\Users\\SK\\Documents\\Footwear\\IcchaNewFoot\\Model\\AddDataFld\\AddPurchase.cs",
-              "RelativeToolTip": "Model\\AddDataFld\\AddPurchase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAEAAAA",
+              "DocumentIndex": 1,
+              "Title": "AddSize.cs",
+              "DocumentMoniker": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Model\\AddDataFld\\AddSize.cs",
+              "RelativeDocumentMoniker": "Model\\AddDataFld\\AddSize.cs",
+              "ToolTip": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Model\\AddDataFld\\AddSize.cs",
+              "RelativeToolTip": "Model\\AddDataFld\\AddSize.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T11:47:12.534Z",
+              "WhenOpened": "2024-09-13T09:31:07.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Color.cs",
+              "DocumentMoniker": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Model\\Color.cs",
+              "RelativeDocumentMoniker": "Model\\Color.cs",
+              "ToolTip": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Model\\Color.cs",
+              "RelativeToolTip": "Model\\Color.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAmwB0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T09:28:37.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "20240912114033_part04.cs",
-              "DocumentMoniker": "C:\\Users\\SK\\Documents\\Footwear\\IcchaNewFoot\\Migrations\\20240912114033_part04.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240912114033_part04.cs",
-              "ToolTip": "C:\\Users\\SK\\Documents\\Footwear\\IcchaNewFoot\\Migrations\\20240912114033_part04.cs",
-              "RelativeToolTip": "Migrations\\20240912114033_part04.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAABeAAAA",
+              "Title": "SizeController.cs",
+              "DocumentMoniker": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Controllers\\SizeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SizeController.cs",
+              "ToolTip": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Controllers\\SizeController.cs",
+              "RelativeToolTip": "Controllers\\SizeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T11:40:33.848Z",
+              "WhenOpened": "2024-09-13T09:27:38.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetPurch.cs",
+              "DocumentMoniker": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Model\\dto\\GetPurch.cs",
+              "RelativeDocumentMoniker": "Model\\dto\\GetPurch.cs",
+              "ToolTip": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Model\\dto\\GetPurch.cs",
+              "RelativeToolTip": "Model\\dto\\GetPurch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T09:19:52.06Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "VendorDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\SK\\Documents\\Footwear\\IcchaNewFoot\\Migrations\\VendorDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Migrations\\VendorDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\SK\\Documents\\Footwear\\IcchaNewFoot\\Migrations\\VendorDbContextModelSnapshot.cs",
-              "RelativeToolTip": "Migrations\\VendorDbContextModelSnapshot.cs",
-              "ViewState": "AQIAAIsBAAAAAAAAAAAgwKUBAAAuAAAA",
+              "Title": "PurchaseController.cs",
+              "DocumentMoniker": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Controllers\\PurchaseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PurchaseController.cs",
+              "ToolTip": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Controllers\\PurchaseController.cs",
+              "RelativeToolTip": "Controllers\\PurchaseController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAmwDYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T11:39:00.932Z",
+              "WhenOpened": "2024-09-13T09:14:56.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Purchase.cs",
+              "DocumentMoniker": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Model\\Purchase.cs",
+              "RelativeDocumentMoniker": "Model\\Purchase.cs",
+              "ToolTip": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Model\\Purchase.cs",
+              "RelativeToolTip": "Model\\Purchase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T09:13:30.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Purchase.cs",
-              "DocumentMoniker": "C:\\Users\\SK\\Documents\\Footwear\\IcchaNewFoot\\Model\\Purchase.cs",
-              "RelativeDocumentMoniker": "Model\\Purchase.cs",
-              "ToolTip": "C:\\Users\\SK\\Documents\\Footwear\\IcchaNewFoot\\Model\\Purchase.cs",
-              "RelativeToolTip": "Model\\Purchase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T11:19:00.094Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }

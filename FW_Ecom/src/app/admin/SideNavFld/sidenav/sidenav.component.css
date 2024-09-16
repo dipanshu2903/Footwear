@@ -1,64 +1,85 @@
-
-.sidebar{
-    height: 100vh;
+.sidebar {
+  height: 100vh;
 }
+
+.sidebar ul {
+  margin-left: 40px !important;
+}
+
 li {
-    width: 100%;
+  width: 100%;
 }
+
 i {
-    margin-right: 5px;
-    /* color: #ff5618; */   
-  }
-li p {
-    color: white;
-    font-weight: 500;
-    padding: 1px 20px !important;
-    border-radius: 26px;
-    font-size: 20px;
-    cursor: pointer;
-    /* border-bottom: 2px solid #ff5618; */
-     /* box-shadow: 0px 0px 5px #ff4400; */
-     transition : ease-in 0.25s;
-     /* animation-duration: 4s; */
-    
+  margin-right: 5px;
 }
-li p:hover {
-    background: white;
-    color: black;
-  /* color:#ff5618; */
-  }
- .drop-down{
-    color: black;
-    border-radius: 0px;
-    padding: 0px !important;
- }
- .drop-down .collapse {
-    margin-left: 30px;
- }
- .drop-down .collapse p{
-    color:  #fff;
- }
- .drop-down .collapse p:hover{
-    color: #ff5618;
-    background: transparent !important;
 
- }
-/* side nav dropdowm  start */
- .menu-items {
-    margin-bottom: 10px;
-  }
-  .menu-arrow {
-    margin-left: auto;
-    transition: transform 0.3s ease;
-  }
-  .collapse.show + .menu-arrow {
-    transform: rotate(180deg);
-  }
-  .menu-icon {
-    margin-right: 10px;
-  }
-  .sub-menu {
-    padding-left: 20px;
-  }
+li p {
+  color: white;
+  font-weight: 500;
+  padding: 1px 15px !important;
+  border-radius: 26px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: ease-in 0.25s;
+}
 
-/* side nav dropdowm  end */
+li p:hover,
+li p.active {
+  background: white;
+  color: black;
+}
+
+/* Dropdown active state */
+.drop-down {
+  color: black;
+  border-radius: 0px;
+  padding: 0px !important;
+}
+
+.drop-down .collapse {
+  margin-left: 30px;
+}
+
+.drop-down .collapse p {
+  color: #fff;
+}
+
+.drop-down .collapse p:hover,
+.drop-down .collapse p.active {
+  color: #ff5618;
+  background: transparent !important;
+}
+
+/* Highlight active dropdown */
+.drop-down p.active {
+  background-color: #fff; 
+  color: #000;
+}
+
+/* Show dropdown menu when active */
+.collapse.show {
+  display: block;
+}
+
+/* Side nav dropdown styles */
+.menu-items {
+  margin-bottom: 10px;
+}
+
+.menu-arrow {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.collapse.show + .menu-arrow {
+  transform: rotate(180deg);
+}
+
+.menu-icon {
+  margin-right: 10px;
+}
+
+.sub-menu {
+  padding-left: 20px;
+}

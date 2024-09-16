@@ -9,7 +9,7 @@ namespace EcommFoot.Model
         [Key]
         public int Purchase_Id { get; set; }
 
-        [ForeignKey("Product_Id")]
+        [ForeignKey("Product")]
         public int Product_Id { get; set; }
         public Product Product { get; set; }
         public decimal Quantity { get; set; }

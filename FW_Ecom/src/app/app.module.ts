@@ -22,7 +22,9 @@ import { InputTextModule } from 'primeng/inputtext';
 import { AvatarModule } from 'primeng/avatar';
 import { MessageService } from 'primeng/api';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';     
-import { ToastModule } from 'primeng/toast'; 
+import { ToastModule } from 'primeng/toast';
+import { PurchOrdComponent } from './admin/SideNavFld/main/purch-ord/purch-ord.component';
+import { PurchHstComponent } from './admin/SideNavFld/main/purch-hst/purch-hst.component'; 
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { ToastModule } from 'primeng/toast';
     AddProductComponent,
     ProductListComponent,
     AdminLoginComponent,
-    AdminRegisterComponent
+    AdminRegisterComponent,
+    PurchOrdComponent,
+    PurchHstComponent
   ],
   imports: [
     BrowserModule,

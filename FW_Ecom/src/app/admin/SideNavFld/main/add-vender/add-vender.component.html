@@ -21,7 +21,7 @@
           <div class="text-danger" *ngIf="LastName.errors?.['minlength'] && (LastName.touched || LastName.dirty)">Last Name is Too Short...</div>
           <div class="text-danger" *ngIf="LastName.errors?.['pattern'] && (LastName.touched || LastName.dirty)">Last name must start with an alphabet</div>
         </div>
-        <div class="col-lg-12 mb-3">
+        <div class="col-lg-6 mb-3">
           <label for="mobile" class="form-label">Contact</label>
           <input type="text" class="form-control" id="mobile" formControlName="contact">
           <div class="text-danger" *ngIf="Contact.errors?.['required'] && (Contact.touched || Contact.dirty)">Contact is required</div>
@@ -29,7 +29,7 @@
           <div class="text-danger" *ngIf="Contact.errors?.['minlength'] && (Contact.touched || Contact.dirty)">Contact is too short</div>
           <div class="text-danger" *ngIf="Contact.errors?.['maxlength'] && (Contact.touched || Contact.dirty)">Contact is too long</div>
         </div>
-        <div class="col-lg-12 mb-3">
+        <div class="col-lg-6 mb-3">
           <label for="email" class="form-label">Email</label>
           <input type="text" class="form-control" id="email" formControlName="email">
           <div class="form-text text-danger" *ngIf="Email.errors?.['required'] && (Email.touched || Email.dirty)">Email is required</div>

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EcommFoot.Migrations
 {
     [DbContext(typeof(VendorDbContext))]
-    [Migration("20240912114033_part04")]
-    partial class part04
+    [Migration("20240912125218_Part01")]
+    partial class Part01
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

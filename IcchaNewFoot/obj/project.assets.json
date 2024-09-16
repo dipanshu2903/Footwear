@@ -4523,23 +4523,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sk\\.nuget\\packages\\": {},
+    "C:\\Users\\SK\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\EcommFoot.csproj",
+      "projectUniqueName": "C:\\Users\\SK\\Documents\\Footwear\\IcchaNewFoot\\EcommFoot.csproj",
       "projectName": "EcommFoot",
-      "projectPath": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\EcommFoot.csproj",
-      "packagesPath": "C:\\Users\\Sk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\obj\\",
+      "projectPath": "C:\\Users\\SK\\Documents\\Footwear\\IcchaNewFoot\\EcommFoot.csproj",
+      "packagesPath": "C:\\Users\\SK\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SK\\Documents\\Footwear\\IcchaNewFoot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Sk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SK\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4610,7 +4610,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcommFoot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d77fda25a128bc0fafc5892c7c79d4cf76b63fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4220882dc1f3ce53ce7e0c1b797248954d40cbe5")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcommFoot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcommFoot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

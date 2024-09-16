@@ -1,20 +1,18 @@
-<<<<<<< HEAD
-import { Component } from '@angular/core';
-=======
+
+
 import { Component, OnInit } from '@angular/core';
 import { MessageService } from 'primeng/api';
 import { purchaseInter } from 'src/app/Service/ecom-inter';
 import { EcomServiceService } from 'src/app/Service/ecom-service.service';
->>>>>>> 4d77fda25a128bc0fafc5892c7c79d4cf76b63fa
 
 @Component({
   selector: 'app-purch-hst',
   templateUrl: './purch-hst.component.html',
   styleUrls: ['./purch-hst.component.css']
 })
-<<<<<<< HEAD
-export class PurchHstComponent {
-=======
+
+
+
 export class PurchHstComponent implements OnInit{
    purchase: purchaseInter[] = [];
    displayMsg: string = '';
@@ -48,6 +46,6 @@ export class PurchHstComponent implements OnInit{
     //     error: (error) => console.error('Error deleting :', error)
     //   });
     // }
->>>>>>> 4d77fda25a128bc0fafc5892c7c79d4cf76b63fa
+
 
 }

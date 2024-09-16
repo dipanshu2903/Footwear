@@ -54,8 +54,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -79,8 +83,7 @@
               "RelativeToolTip": "Migrations\\20240910131623_part03.cs",
               "ViewState": "AQIAADQAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T09:34:07.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T09:34:07.877Z"
             },
             {
               "$type": "Document",
@@ -92,8 +95,7 @@
               "RelativeToolTip": "Controllers\\SizeController.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAgwCUAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T09:27:28.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T09:27:28.869Z"
             },
             {
               "$type": "Document",
@@ -105,8 +107,7 @@
               "RelativeToolTip": "Controllers\\PurchaseController.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAxwDMAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T09:16:33.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T09:16:33.429Z"
             },
             {
               "$type": "Document",
@@ -118,8 +119,7 @@
               "RelativeToolTip": "Migrations\\20240913044026_part04.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T09:33:59.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T09:33:59.309Z"
             },
             {
               "$type": "Document",
@@ -131,8 +131,7 @@
               "RelativeToolTip": "Migrations\\20240910115931_part01.cs",
               "ViewState": "AQIAADQAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T09:29:39.609Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T09:29:39.609Z"
             },
             {
               "$type": "Document",
@@ -144,8 +143,7 @@
               "RelativeToolTip": "Model\\AddDataFld\\AddSize.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T09:27:41.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T09:27:41.024Z"
             },
             {
               "$type": "Document",
@@ -157,8 +155,7 @@
               "RelativeToolTip": "Model\\Color.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAA0wCIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T09:26:54.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T09:26:54.109Z"
             },
             {
               "$type": "Document",
@@ -170,12 +167,7 @@
               "RelativeToolTip": "Model\\dto\\GetPurchase.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T09:16:13.355Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "WhenOpened": "2024-09-13T09:16:13.355Z"
             },
             {
               "$type": "Document",
@@ -187,8 +179,7 @@
               "RelativeToolTip": "Model\\Purchase.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T09:13:20.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T09:13:20.156Z"
             },
             {
               "$type": "Document",
@@ -200,8 +191,7 @@
               "RelativeToolTip": "Controllers\\ProductController.cs",
               "ViewState": "AQIAADIAAAAAAAAAAAAwwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T09:03:31.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T09:03:31.367Z"
             }
           ]
         }

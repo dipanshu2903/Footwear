@@ -30,7 +30,7 @@
           </p>
           <div class="collapse p-1 mx-1" [ngClass]="{'show': activeDropdown === 'drop2'}" id="drop2">
             <p routerLink="dashboard/products" [routerLinkActive]="'active'" [ngClass]="{'active': isActive('/dashboard/products')}">
-              View List <i class="bi bi-eye-fill"></i>
+              View List <i class="bi bi-list-stars"></i>
             </p>
             <p routerLink="dashboard/aadproduct" [routerLinkActive]="'active'" [ngClass]="{'active': isActive('/dashboard/aadproduct')}">
               Add Product <i class="bi bi-plus-circle"></i>
@@ -43,10 +43,10 @@
           </p>
           <div class="collapse mx-1" [ngClass]="{'show': activeDropdown === 'drop3'}" id="drop3">
             <p routerLink="dashboard/purchOrd" [routerLinkActive]="'active'" [ngClass]="{'active': isActive('/dashboard/purchOrd')}">
-              Purchase Order <i class="bi bi-person-vcard"></i>
+              Purchase Order <i class="bi bi-bag"></i>
             </p>
             <p routerLink="dashboard/purchHst" [routerLinkActive]="'active'" [ngClass]="{'active': isActive('/dashboard/purchHst')}">
-              Purchase History <i class="bi bi-person-plus-fill"></i>
+              Purchase History <i class="bi bi-clock-history"></i>
             </p>
           </div>
         </li>

@@ -23,7 +23,6 @@ public class PurchaseController : ControllerBase
 
     [HttpGet]
 
-
     public async Task<ActionResult<IEnumerable<GetPurchase>>> GetAllPurchase()
     {
         List<GetPurchase> p = (await dbContext.Purchases
@@ -54,7 +53,11 @@ public class PurchaseController : ControllerBase
             Purchase_Id = addPurchase.Purchase_Id,
             Quantity = addPurchase.Quantity,
             UnitPrice = addPurchase.UnitPrice,
+
             TotalPrice = TotalAmount,
+
+            TotalPrice =TotalAmount,
+
             SellPrice = addPurchase.SellPrice,
             PurchaseDate = addPurchase.PurchaseDate,
             PaymentMethod = addPurchase.PaymentMethod,

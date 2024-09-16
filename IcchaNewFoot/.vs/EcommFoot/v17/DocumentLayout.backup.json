@@ -3,12 +3,45 @@
   "WorkspaceRootPath": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\migrations\\20240913044026_part04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:migrations\\20240913044026_part04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\controllers\\purchasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:controllers\\purchasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\controllers\\vendorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:controllers\\vendorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\model\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:model\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\controllers\\statecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:controllers\\statecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\model\\adddatafld\\addcitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:model\\adddatafld\\addcitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|c:\\users\\sk\\documents\\footwear\\icchanewfoot\\model\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6204AD-DC93-46A6-88EC-31EE22CE0FE8}|EcommFoot.csproj|solutionrelative:model\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> dk
     }
   ],
   "DocumentGroupContainers": [
@@ -18,9 +51,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 2,
           "Children": [
             {
+=======
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-06T09:35:10.518Z",
+              "EditorCaption": ""
+            },
+            {
+>>>>>>> dk
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
@@ -31,6 +83,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "20240913044026_part04.cs",
               "DocumentMoniker": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Migrations\\20240913044026_part04.cs",
               "RelativeDocumentMoniker": "Migrations\\20240913044026_part04.cs",
@@ -39,10 +92,21 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-16T05:10:30.875Z",
+=======
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwBkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T13:55:38.35Z",
+>>>>>>> dk
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "PurchaseController.cs",
               "DocumentMoniker": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Controllers\\PurchaseController.cs",
@@ -52,6 +116,80 @@
               "ViewState": "AgIAAAYAAAAAAAAAAAAAADkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-16T04:37:40.74Z"
+=======
+              "DocumentIndex": 5,
+              "Title": "CityController.cs",
+              "DocumentMoniker": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Controllers\\CityController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CityController.cs",
+              "ToolTip": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Controllers\\CityController.cs",
+              "RelativeToolTip": "Controllers\\CityController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T11:14:32.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "City.cs",
+              "DocumentMoniker": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Model\\City.cs",
+              "RelativeDocumentMoniker": "Model\\City.cs",
+              "ToolTip": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Model\\City.cs",
+              "RelativeToolTip": "Model\\City.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T11:13:10.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddCityDto.cs",
+              "DocumentMoniker": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Model\\AddDataFld\\AddCityDto.cs",
+              "RelativeDocumentMoniker": "Model\\AddDataFld\\AddCityDto.cs",
+              "ToolTip": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Model\\AddDataFld\\AddCityDto.cs",
+              "RelativeToolTip": "Model\\AddDataFld\\AddCityDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T11:13:05.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Vendor.cs",
+              "DocumentMoniker": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Model\\Vendor.cs",
+              "RelativeDocumentMoniker": "Model\\Vendor.cs",
+              "ToolTip": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Model\\Vendor.cs",
+              "RelativeToolTip": "Model\\Vendor.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T12:50:04.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VendorController.cs",
+              "DocumentMoniker": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Controllers\\VendorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VendorController.cs",
+              "ToolTip": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Controllers\\VendorController.cs",
+              "RelativeToolTip": "Controllers\\VendorController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwCYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T12:46:20.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StateController.cs",
+              "DocumentMoniker": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Controllers\\StateController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StateController.cs",
+              "ToolTip": "C:\\Users\\Sk\\Documents\\Footwear\\IcchaNewFoot\\Controllers\\StateController.cs",
+              "RelativeToolTip": "Controllers\\StateController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAqwCIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T10:22:19.564Z",
+              "EditorCaption": ""
+>>>>>>> dk
             }
           ]
         }

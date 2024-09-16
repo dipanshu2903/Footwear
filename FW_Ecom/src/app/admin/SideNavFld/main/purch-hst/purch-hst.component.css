@@ -5,7 +5,8 @@
     font-size: 15px;
 }
 :host  tr > td  {
-    text-align: center;font-weight:;
+    text-align: center;
+    font-weight:500;
 }
 .bg-warning {
     background-color: #ffecb3 !important; /* Light yellow for pending */

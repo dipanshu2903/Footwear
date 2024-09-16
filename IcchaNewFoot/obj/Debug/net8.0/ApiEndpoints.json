@@ -18,8 +18,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "addbrand",
-        "Type": "EcommFoot.Model.AddDataFld.AddBrand",
+        "Name": "brand",
+        "Type": "EcommFoot.Model.Brand",
         "IsRequired": true
       }
     ],
@@ -96,106 +96,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "addcolor",
-        "Type": "EcommFoot.Model.AddDataFld.AddColor",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EcommFoot.Controllers.ProductController",
-    "Method": "GetAllProduct",
-    "RelativePath": "api/Product",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EcommFoot.Model.dto.getproduct, EcommFoot, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "EcommFoot.Controllers.ProductController",
-    "Method": "AddProduct",
-    "RelativePath": "api/Product",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "addProduct",
-        "Type": "EcommFoot.Model.AddDataFld.AddProduct",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EcommFoot.Controllers.ProductController",
-    "Method": "DeleteProduct",
-    "RelativePath": "api/Product/{product_id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "product_id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EcommFoot.Controllers.ProductController",
-    "Method": "GetAllProducts",
-    "RelativePath": "api/Product/all",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EcommFoot.Controllers.PurchaseController",
-    "Method": "GetAllPurchase",
-    "RelativePath": "api/Purchase",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EcommFoot.Model.dto.GetPurch, EcommFoot, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "EcommFoot.Controllers.PurchaseController",
-    "Method": "AddPurchase",
-    "RelativePath": "api/Purchase",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "addPurchase",
-        "Type": "EcommFoot.Model.AddDataFld.AddPurchase",
+        "Name": "color",
+        "Type": "EcommFoot.Model.Color",
         "IsRequired": true
       }
     ],
@@ -220,8 +122,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "addsize",
-        "Type": "EcommFoot.Model.AddDataFld.AddSize",
+        "Name": "size",
+        "Type": "EcommFoot.Model.Size",
         "IsRequired": true
       }
     ],
@@ -254,50 +156,14 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EcommFoot.Controllers.SubCateController",
-    "Method": "GetAllSubCate",
-    "RelativePath": "api/SubCate",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EcommFoot.Controllers.SubCateController",
-    "Method": "AddSubCate",
-    "RelativePath": "api/SubCate",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "addsubcate",
-        "Type": "EcommFoot.Model.AddDataFld.AddSubCate",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "EcommFoot.Controllers.VendorController",
-    "Method": "GetVendor",
+    "Method": "GetAllVendor",
     "RelativePath": "api/Vendor",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EcommFoot.Model.dto.GetVendorDto, EcommFoot, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "EcommFoot.Controllers.VendorController",
@@ -313,32 +179,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EcommFoot.Controllers.VendorController",
-    "Method": "DeleteVendor",
-    "RelativePath": "api/Vendor/{VendorId}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "VendorId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EcommFoot.Controllers.VendorController",
-    "Method": "GetAllVendor",
-    "RelativePath": "api/Vendor/all",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   },
   {

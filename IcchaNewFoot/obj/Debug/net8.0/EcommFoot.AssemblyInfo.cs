@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcommFoot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4476a7a04a7485c724c0ab48333921eadbf1ab1b")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4220882dc1f3ce53ce7e0c1b797248954d40cbe5")]
+>>>>>>> dk
 [assembly: System.Reflection.AssemblyProductAttribute("EcommFoot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcommFoot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,3 @@
-// import { Component } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { MessageService } from 'primeng/api';
 import { purchaseInter } from 'src/app/Service/ecom-inter';
@@ -9,7 +8,6 @@ import { EcomServiceService } from 'src/app/Service/ecom-service.service';
   templateUrl: './purch-hst.component.html',
   styleUrls: ['./purch-hst.component.css']
 })
-
 export class PurchHstComponent implements OnInit{
    purchase: purchaseInter[] = [];
    displayMsg: string = '';

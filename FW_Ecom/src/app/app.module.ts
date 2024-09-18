@@ -25,6 +25,9 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastModule } from 'primeng/toast';
 import { PurchOrdComponent } from './admin/SideNavFld/main/purch-ord/purch-ord.component';
 import { PurchHstComponent } from './admin/SideNavFld/main/purch-hst/purch-hst.component'; 
+import {TreeSelectModule} from 'primeng/treeselect';
+import {FileUploadModule} from 'primeng/fileupload';
+
 
 @NgModule({
   declarations: [
@@ -54,7 +57,9 @@ import { PurchHstComponent } from './admin/SideNavFld/main/purch-hst/purch-hst.c
     DialogModule,
     InputTextModule,
     AvatarModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    TreeSelectModule,
+    FileUploadModule
 
   ],
   providers: [EcomServiceService , MessageService],

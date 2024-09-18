@@ -12,15 +12,19 @@ export interface EcomInter {
   }
   export interface ProductInter{
     product_Id :number ;
-    vendorId : number;
+    // vendorId : number;
     colorId:number;
-    sizeId:number;
+    colorName:string;
+    sizeNo:string;
+    // sizeId:number;
     productName : string;
     imageUrl:string;
     description : string;
     unitPrice : number;
     gender:string;
-    subCategoryId : number;
+     
+    // subCategoryId : number;
+    subCategoryName:string;
   }
   export interface purchaseInter{
     purchaseId:number;

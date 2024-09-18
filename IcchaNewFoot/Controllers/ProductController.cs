@@ -73,6 +73,60 @@ namespace EcommFoot.Controllers
             return Ok(prod);
         }
 
+        [HttpPut("{Product_Id}")]
+        public async Task<IActionResult> UpdateProduct(int Product_Id, [FromBody] AddProduct updateProduct)
+        {
+            if (Product_Id != updateProduct.Product_Id)
+            {
+                return BadRequest(new { message = "Product ID mismatch" });
+            }
+
+            var product = await dbContext.Products.FindAsync(Product_Id);
+            if (product == null)
+            {
+                return NotFound(new { message = "Product not found" });
+            }
+
+            product.VendorId = updateProduct.VendorId;
+            product.ColorId = updateProduct.ColorId;
+            product.SizeId = updateProduct.SizeId;
+            product.ProductName = updateProduct.ProductName;
+            product.ImageUrl = updateProduct.ImageUrl;
+            product.Description = updateProduct.Description;
+            product.UnitPrice = updateProduct.UnitPrice;
+            product.Gender = updateProduct.Gender;
+            product.SubcategoryId = updateProduct.SubcategoryId;
+
+            dbContext.Entry(product).State = EntityState.Modified;
+
+            try
+            {
+                await dbContext.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ProductExists(Product_Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return Ok(product);
+        }
+
+        private bool ProductExists(int id)
+        {
+            return dbContext.Products.Any(e => e.Product_Id == id);
+        }
+
+
+
+
+
 
         [HttpDelete("{product_id}")]
         public async Task<IActionResult> DeleteProduct(int product_id)
@@ -86,10 +140,5 @@ namespace EcommFoot.Controllers
             await dbContext.SaveChangesAsync();
             return Ok(new { message = "product deleted successfully" });
         }
-
-
-
-
-      
     }
 }

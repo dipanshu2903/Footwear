@@ -1,11 +1,27 @@
-:host  tr > th  {
+:host  tr > th{
     padding: 15px 5px ;
     min-width: 130px;
     text-align: center;
 }
 :host  tr > td  {
+    max-width: 250px;
     text-align: center;
 }
+.card tr> .txt {
+text-align: justify;
+}
+:host  img {
+    overflow: hidden;
+}
+:host  img:hover {
+    rotate: -10deg;
+    transition: all ease-in-out;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+    z-index: 99;
+}
+
 /* .bg th{
     background-color: #7A9D96;
 } */

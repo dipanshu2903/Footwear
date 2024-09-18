@@ -56,7 +56,6 @@ public class PurchaseController : ControllerBase
 
             TotalPrice = TotalAmount,
 
-            TotalPrice =TotalAmount,
 
             SellPrice = addPurchase.SellPrice,
             PurchaseDate = addPurchase.PurchaseDate,

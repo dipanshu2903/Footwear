@@ -2,7 +2,6 @@ import { Component,OnInit } from '@angular/core';
 import { Form, FormControl, FormGroup, Validators } from '@angular/forms';
 import { MessageService } from 'primeng/api';
 import{EcomServiceService} from 'src/app/Service/ecom-service.service';
-
 @Component({
   selector: 'app-add-vender',
   templateUrl: './add-vender.component.html',
@@ -11,28 +10,23 @@ import{EcomServiceService} from 'src/app/Service/ecom-service.service';
 export class AddVenderComponent implements OnInit{
   displayMsg: string = '';
   isAccountCreated: boolean = false;
-
   states: { id: number, stateName: string }[] = [];
   cities: { id: number, cityName: string, stateId: number }[] = [];
   filteredCities: { id: number, cityName: string }[] = [];
-
   constructor(private conService: EcomServiceService , private messageService: MessageService) { }
-
   ngOnInit(): void {
     this.loadStates();
     this.loadCities();
    }
-
   addVender = new FormGroup({
-    firstName: new FormControl('', [Validators.required, Validators.minLength(2), Validators.pattern("[A-Za-z].*")]),
-    lastName: new FormControl('', [Validators.required, Validators.minLength(2), Validators.pattern("[A-Za-z].*")]),
-    contact: new FormControl('', [Validators.required, Validators.pattern('[0-9]*'), Validators.minLength(10), Validators.maxLength(10)]),
-    email: new FormControl('', [Validators.required, Validators.email]),
+    firstName: new FormControl('',[Validators.required, Validators.minLength(2), Validators.pattern("[A-Za-z].*")]),
+    lastName: new FormControl('',[Validators.required, Validators.minLength(2), Validators.pattern("[A-Za-z].*")]),
+    contact: new FormControl('',[Validators.required, Validators.pattern('[0-9]*'), Validators.minLength(10), Validators.maxLength(10)]),
+    email: new FormControl('',[Validators.required, Validators.email]),
     address : new FormControl('',[Validators.required]),
-    state: new FormControl('', [Validators.required]),
-    city: new FormControl('', [Validators.required])
+    state: new FormControl('',[Validators.required]),
+    city: new FormControl('',[Validators.required])
   })
-
   vendorRegSubmit() {
     this.conService.addPostVender({
       firstName: this.addVender.value.firstName as string,
@@ -60,7 +54,6 @@ export class AddVenderComponent implements OnInit{
       }
     });
   }
-
   loadStates() {
     this.conService.getStates().subscribe(
       (data: { id: number, stateName: string }[]) => {
@@ -71,7 +64,6 @@ export class AddVenderComponent implements OnInit{
       }
     );
   }
-
   loadCities() {
     this.conService.getCities().subscribe(
       (data: { id: number, cityName: string, stateId: number }[]) => {
@@ -82,14 +74,12 @@ export class AddVenderComponent implements OnInit{
       }
     );
   }
-
   onStateChange(event: Event) {
     const target = event.target as HTMLSelectElement;
     const stateId = Number(target.value);
     this.filteredCities = this.cities.filter(city => city.stateId === stateId);
     this.addVender.patchValue({ city: '' }); // Reset city value
   }
-
   get FirstName(): FormControl {
     return this.addVender.get("firstName") as FormControl;
   }
@@ -111,8 +101,6 @@ export class AddVenderComponent implements OnInit{
   get City():FormControl{
     return this.addVender.get('city') as FormControl
   }
- 
-
 }
 
 

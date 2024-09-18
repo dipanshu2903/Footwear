@@ -30,16 +30,6 @@ create table cities(
 );
 
 
-
-
-
-
-
-
-
-
-
-
 CREATE TABLE Products(
     ProductID INT IDENTITY(1,1) PRIMARY KEY, -- Unique identifier for each product
     VendorID INT FOREIGN KEY REFERENCES Vendors(VendorID), -- Foreign key to the Vendors table

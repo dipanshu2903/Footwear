@@ -60,6 +60,7 @@ li p.active {
 /* Show dropdown menu when active */
 .collapse.show {
   display: block;
+
 }
 
 /* Side nav dropdown styles */
@@ -83,3 +84,5 @@ li p.active {
 .sub-menu {
   padding-left: 20px;
 }
+
+

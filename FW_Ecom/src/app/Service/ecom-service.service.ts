@@ -8,7 +8,6 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class EcomServiceService {
-
   constructor(private http : HttpClient) { }
 
   url : string = environment.baseUrl;
@@ -67,15 +66,22 @@ dltPurchase(purchase_Id: number): Observable<any>{
   return this.http.delete(`${this.url}Purchase/${purchase_Id}`)
 } 
 
-  // getColors(): Observable<any[]> {
-  //   return this.http.get<any[]>(`${this.url}Color`);
-  // }
+editProduct(product_Id: number, product: ProductInter): Observable<any> {
+  return this.http.put<any>(`${this.url}Product/${product_Id}`, product);
+}
 
-  // getAllSubCate():Observable<any[]>{
-  //   return this.http.get<any[]>(`${this.url}SubCate`);
-  // }
+addProduct(product: ProductInter): Observable<any> {
+  return this.http.post<any>(`${this.url}Product`,product);
+}
+getColors(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.url}Color`);
+  }
 
-  // getAllSize():Observable<any[]>{
-  //   return this.http.get<any[]>(`${this.url}Size`);
-  // }
+  getAllSubCate():Observable<any[]>{
+    return this.http.get<any[]>(`${this.url}SubCate`);
+  }
+
+  getAllSize():Observable<any[]>{
+    return this.http.get<any[]>(`${this.url}Size`);
+  }
 }

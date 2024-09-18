@@ -1,87 +1,125 @@
 <div class="col-sm-auto bg-light sticky-top">
-    <div class="sidebar d-flex flex-sm-column flex-row flex-nowrap bg-dark align-items-center sticky-top">
-      <h1 class="d-block p-3 mb-4 theme-clr">
-        <i class="bi-person-circle h2"></i> Admin
-      </h1>
-      <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-right align-items-start">
-        <li>
-          <p routerLink="dashboard/home" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}"
-             [ngClass]="{'active': isActive('/dashboard/home')}">
-            <i class="bi bi-house"></i> Home
+  <div class="sidebar d-flex flex-sm-column flex-row flex-nowrap bg-dark align-items-center sticky-top">
+    <h1 class="d-block p-3 mb-4 theme-clr">
+      <i class="bi-person-circle h2"></i> Admin
+    </h1>
+    <ul
+      class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-right align-items-start">
+      <li>
+        <p routerLink="dashboard/home" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}"
+          [ngClass]="{'active': isActive('/dashboard/home')}">
+          <i class="bi bi-house"></i> Home
+        </p>
+      </li>
+      <li class="drop-down">
+        <p (click)="toggleDropdown('drop1')"
+          [ngClass]="{'active': activeDropdown === 'drop1' || isActive('/dashboard/vendor')}">
+          <i class="bi bi-person-arms-up"></i> Vendor <i class="bi bi-chevron-down"></i>
+        </p>
+        <div class="collapse mx-1" [ngClass]="{'show': activeDropdown === 'drop1'}" id="drop1">
+          <p routerLink="dashboard/vendors" [routerLinkActive]="'active'"
+            [ngClass]="{'active': isActive('/dashboard/vendor')}">
+            View List <i class="bi bi-person-vcard"></i>
           </p>
-        </li>
-        <li class="drop-down">
-          <p (click)="toggleDropdown('drop1')" [ngClass]="{'active': activeDropdown === 'drop1' || isActive('/dashboard/vendor')}">
-            <i class="bi bi-person-arms-up"></i> Vendor <i class="bi bi-chevron-down"></i>
+          <p routerLink="dashboard/addvender" [routerLinkActive]="'active'"
+            [ngClass]="{'active': isActive('/dashboard/addvender')}">
+            Add Vendor <i class="bi bi-person-plus-fill"></i>
           </p>
-          <div class="collapse mx-1" [ngClass]="{'show': activeDropdown === 'drop1'}" id="drop1">
-            <p routerLink="dashboard/vendors" [routerLinkActive]="'active'" [ngClass]="{'active': isActive('/dashboard/vendor')}">
-              View List <i class="bi bi-person-vcard"></i>
-            </p>
-            <p routerLink="dashboard/addvender" [routerLinkActive]="'active'" [ngClass]="{'active': isActive('/dashboard/addvender')}">
-              Add Vendor <i class="bi bi-person-plus-fill"></i>
-            </p>
-          </div>
-        </li>
-        <li class="drop-down">
-          <p (click)="toggleDropdown('drop2')" [ngClass]="{'active': activeDropdown === 'drop2' || isActive('/dashboard/products')}">
-            <i class="bi bi-cart"></i> Products <i class="bi bi-chevron-down"></i>
+        </div>
+      </li>
+      <li class="drop-down">
+        <p (click)="toggleDropdown('drop2')"
+          [ngClass]="{'active': activeDropdown === 'drop2' || isActive('/dashboard/products')}">
+          <i class="bi bi-cart"></i> Products <i class="bi bi-chevron-down"></i>
+        </p>
+        <div class="collapse p-1 mx-1" [ngClass]="{'show': activeDropdown === 'drop2'}" id="drop2">
+          <p routerLink="dashboard/products" [routerLinkActive]="'active'"
+            [ngClass]="{'active': isActive('/dashboard/products')}">
+            View List <i class="bi bi-list-stars"></i>
           </p>
-          <div class="collapse p-1 mx-1" [ngClass]="{'show': activeDropdown === 'drop2'}" id="drop2">
-            <p routerLink="dashboard/products" [routerLinkActive]="'active'" [ngClass]="{'active': isActive('/dashboard/products')}">
-              View List <i class="bi bi-list-stars"></i>
-            </p>
-            <p routerLink="dashboard/aadproduct" [routerLinkActive]="'active'" [ngClass]="{'active': isActive('/dashboard/aadproduct')}">
-              Add Product <i class="bi bi-plus-circle"></i>
-            </p>
-          </div>
-        </li>
-        <li class="drop-down">
-          <p (click)="toggleDropdown('drop3')" [ngClass]="{'active': activeDropdown === 'drop3' || isActive('/dashboard/purchOrd')}">
-            <i class="bi bi-cart4"></i> Purchase <i class="bi bi-chevron-down"></i>
+          <p routerLink="dashboard/aadproduct" [routerLinkActive]="'active'"
+            [ngClass]="{'active': isActive('/dashboard/aadproduct')}">
+            Add Product <i class="bi bi-plus-circle"></i>
           </p>
-          <div class="collapse mx-1" [ngClass]="{'show': activeDropdown === 'drop3'}" id="drop3">
-            <p routerLink="dashboard/purchOrd" [routerLinkActive]="'active'" [ngClass]="{'active': isActive('/dashboard/purchOrd')}">
-              Purchase Order <i class="bi bi-bag"></i>
-            </p>
-            <p routerLink="dashboard/purchHst" [routerLinkActive]="'active'" [ngClass]="{'active': isActive('/dashboard/purchHst')}">
-              Purchase History <i class="bi bi-clock-history"></i>
-            </p>
-          </div>
-        </li>
-        <li>
-          <p routerLink="dashboard/customer" [routerLinkActive]="'active'" [ngClass]="{'active': isActive('/dashboard/customer')}">
-            <i class="bi bi-person-add"></i> Customer
+        </div>
+      </li>
+      <li class="drop-down">
+        <p (click)="toggleDropdown('drop3')"
+          [ngClass]="{'active': activeDropdown === 'drop3' || isActive('/dashboard/purchOrd')}">
+          <i class="bi bi-cart4"></i> Purchase <i class="bi bi-chevron-down"></i>
+        </p>
+        <div class="collapse mx-1" [ngClass]="{'show': activeDropdown === 'drop3'}" id="drop3">
+          <p routerLink="dashboard/purchOrd" [routerLinkActive]="'active'"
+            [ngClass]="{'active': isActive('/dashboard/purchOrd')}">
+            Purchase Order <i class="bi bi-bag"></i>
           </p>
-        </li>
-        <li>
-          <p routerLink="dashboard/sale-product" [routerLinkActive]="'active'" [ngClass]="{'active': isActive('/dashboard/sale-product')}">
-            <i class="bi bi-bag-heart"></i> Sale Product
+          <p routerLink="dashboard/purchHst" [routerLinkActive]="'active'"
+            [ngClass]="{'active': isActive('/dashboard/purchHst')}">
+            Purchase History <i class="bi bi-clock-history"></i>
           </p>
-        </li>
-        <li>
+        </div>
+      </li>
+      <li>
+        <p routerLink="dashboard/customer" [routerLinkActive]="'active'"
+          [ngClass]="{'active': isActive('/dashboard/customer')}">
+          <i class="bi bi-person-add"></i> Customer
+        </p>
+      </li>
+      <li>
+        <p routerLink="dashboard/sale-product" [routerLinkActive]="'active'"
+          [ngClass]="{'active': isActive('/dashboard/sale-product')}">
+          <i class="bi bi-bag-heart"></i> Sale Product
+        </p>
+      </li>
+      <!-- <li>
           <p routerLink="dashboard/category" [routerLinkActive]="'active'" [ngClass]="{'active': isActive('/dashboard/category')}">
             <i class="bi bi-tags"></i> Category
           </p>
-        </li>
-        <li>
-          <p routerLink="dashboard/in-stock" [routerLinkActive]="'active'" [ngClass]="{'active': isActive('/dashboard/in-stock')}">
-            <i class="bi bi-bookmark-check"></i> In Stock
+        </li> -->
+      <li>
+        <p routerLink="dashboard/in-stock" [routerLinkActive]="'active'"
+          [ngClass]="{'active': isActive('/dashboard/in-stock')}">
+          <i class="bi bi-bookmark-check"></i> In Stock
+        </p>
+      </li>
+      <li>
+        <p routerLink="dashboard/out-of-stock" [routerLinkActive]="'active'"
+          [ngClass]="{'active': isActive('/dashboard/out-of-stock')}">
+          <i class="bi bi-exclamation-triangle"></i> Out Of Stock
+        </p>
+      </li>
+      <li class="drop-down">
+        <p (click)="toggleDropdown('drop4')"
+          [ngClass]="{'active': activeDropdown === 'drop4' || isActive('/dashboard/purchOrd')}">
+          Viwe All Details <i class="bi bi-chevron-down"></i>
+          <!-- <i class="bi bi-list-check"></i> -->
+        </p>
+        <div class="collapse mx-1" [ngClass]="{'show': activeDropdown === 'drop4'}" id="drop4">
+          <p routerLink="dashboard/lknjlk" [routerLinkActive]="'active'"
+            [ngClass]="{'active': isActive('/dashboard/purchOrd')}">
+            Category
           </p>
-        </li>
-        <li>
-          <p routerLink="dashboard/out-of-stock" [routerLinkActive]="'active'" [ngClass]="{'active': isActive('/dashboard/out-of-stock')}">
-            <i class="bi bi-exclamation-triangle"></i> Out Of Stock
+          <p routerLink="dashboard/lknjlk" [routerLinkActive]="'active'"
+            [ngClass]="{'active': isActive('/dashboard/purchOrd')}">
+            Sub-Category
           </p>
-        </li>
-      </ul>
-      <div>
-        <h3 class="d-flex align-items-center justify-content-start p-3 theme-clr">
-          <i class="bi bi-box-arrow-right"></i> Logout
-        </h3>
-      </div>
-
-  
+          <p routerLink="dashboard/hjfg" [routerLinkActive]="'active'"
+            [ngClass]="{'active': isActive('/dashboard/purchHst')}">
+            Citys
+          </p>
+          <p routerLink="dashboard/kg" [routerLinkActive]="'active'"
+            [ngClass]="{'active': isActive('/dashboard/purchHst')}">
+            States
+          </p>
+        </div>
+      </li>
+    </ul>
+    <div>
+      <h3 class="d-flex align-items-center justify-content-start p-3 theme-clr">
+        <i class="bi bi-box-arrow-right"></i> Logout
+      </h3>
     </div>
+
+
   </div>
-  
+</div>

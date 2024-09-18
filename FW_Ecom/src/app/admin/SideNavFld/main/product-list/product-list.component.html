@@ -1,38 +1,75 @@
+<div class="text-center mb-3 theme-clr">
+    <h1 class="py-2 fw-bold">Product List</h1>
+</div>
 <div class="card">
     <p-table [value]="product" [paginator]="true" [rows]="5">
         <ng-template pTemplate="header">
             <tr>
-               <th>Product Id</th>
-                <th>Vendor Name</th>
-                <th>Color Name</th>
-                <th>Size</th>
+                <!-- <th>Product Id</th> -->
+                <!-- <th>Vendor Name</th> -->
+                <!-- <th>UnitPrice</th> -->
                 <th>Product Name</th>
+                <th>SubCategory Name</th>
+                <th>Color Name</th>
                 <th>ImageUrl</th>
                 <th>Description</th>
-                <!-- <th>UnitPrice</th> -->
                 <th>Gender</th>
-                <th>SubCategory Name</th>
+                <th>Size</th>
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
         </ng-template>
         <ng-template pTemplate="body" let-p>
             <tr>
-                <td>{{ p.product_Id }}</td>
-                <td>{{ p.vendorName }}</td>
-                <td>{{ p.colorName }}</td>
-                <td>{{ p.sizeNo}}</td>
-                <td>{{ p.productName }}</td>
-                <td><img [src]="p.imageUrl" alt="{{p.productName}}" style="width: 100px; height: auto;" /></td> <!-- Display image -->
-                <td>{{ p.description }}</td>
+                <!-- <td>{{ p.product_Id }}</td> -->
+                <!-- <td>{{ p.vendorName }}</td> -->
                 <!-- <td><span>&#8377;</span>.{{ p.unitPrice}}</td> -->
-                <td>{{ p.gender }}</td>
+                <td>{{ p.productName }}</td>
                 <td>{{ p.subCategoryName }}</td>
-                <td><button class="btn btn-primary">Edit <i class="bi bi-pencil-square"></i></button></td>
-                <td><button class="btn btn-danger disabled" (click)="dltProduct(p.product_Id)">Delete <i class="bi bi-trash3"></i></button></td>
+                <td>{{ p.colorName }}</td>
+                <td><img [src]="p.imageUrl" alt="{{p.productName}}" style="width: 80px; height: auto; overflow: hidden;" /></td>
+                <td class="txt">{{ p.description }}</td>
+                <td>{{ p.gender }}</td>
+                <td>{{ p.sizeNo}}</td>
+                <td><button class="btn btn-primary" type="button" (click)="showDialog(p)" icon="pi pi-info-circle"
+                        label="Show">Edit <i class="bi bi-pencil-square"></i></button></td>
+
+                <td><button class="btn btn-danger disabled" (click)="dltProduct(p.product_Id)">Delete <i
+                            class="bi bi-trash3"></i></button></td>
             </tr>
         </ng-template>
     </p-table>
 </div>
+<!-- ------------------------------------------------------------------------------------- -->
+<p-dialog header="Edit Product" [(visible)]="display" [style]="{width: '50vw'}">
+    <form [formGroup]="productForm" (ngSubmit)="saveProduct()">
+        <div class="row">
+            <div class="col-6 mb-3">
+                <input type="text" class="form-control" pInputText formControlName="productName" placeholder="Product Name"/>
+            </div>
+            <div class="col-6 mb-3">
+                <input type="text" class="form-control" pInputText formControlName="subCategoryName" placeholder="Category Name" />
+            </div>
+            <div class="col-6 mb-3">
+                <input type="text" class="form-control" pInputText formControlName="colorName" placeholder="Color" />
+            </div>
+            <div class="col-6 mb-3">
+                <input type="text" class="form-control" pInputText formControlName="imageUrl" placeholder="imageUrl" />
+            </div>
+            <div class="col-6 mb-3">
+                <input type="text" class="form-control" pInputText formControlName="description" placeholder="description" />
+            </div>
+            <div class="col-6 mb-3">
+                <input type="text" class="form-control" pInputText formControlName="gender" placeholder="gender" />
+            </div>
+            <div class="col-6 mb-3">
+                <input type="text" class="form-control" pInputText formControlName="sizeNo" placeholder="size" />
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-success">{{ editProd ? 'Update' : 'Add' }} Product</button>
+            </div>
+        </div>
+    </form>
 
-
+    
+</p-dialog>

@@ -23,6 +23,7 @@ export class SidenavComponent implements OnInit{
 
   toggleDropdown(dropdownId: string): void {
     this.activeDropdown = this.activeDropdown === dropdownId ? null : dropdownId;
+  
   }
 
   isActive(route: string): boolean {
